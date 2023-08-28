@@ -1,0 +1,14 @@
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Data\bin\Debug\net6.0\Tools.Data.deps.json
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Data\bin\Debug\net6.0\Tools.Data.runtimeconfig.json
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Data\bin\Debug\net6.0\Tools.Data.dll
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Data\bin\Debug\net6.0\Tools.Data.pdb
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Data\obj\Debug\net6.0\Tools.Data.csproj.AssemblyReference.cache
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Data\obj\Debug\net6.0\Tools.Data.GeneratedMSBuildEditorConfig.editorconfig
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Data\obj\Debug\net6.0\Tools.Data.AssemblyInfoInputs.cache
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Data\obj\Debug\net6.0\Tools.Data.AssemblyInfo.cs
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Data\obj\Debug\net6.0\Tools.Data.csproj.CoreCompileInputs.cache
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Data\obj\Debug\net6.0\Tools.Data.dll
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Data\obj\Debug\net6.0\refint\Tools.Data.dll
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Data\obj\Debug\net6.0\Tools.Data.pdb
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Data\obj\Debug\net6.0\Tools.Data.genruntimeconfig.cache
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Data\obj\Debug\net6.0\ref\Tools.Data.dll
