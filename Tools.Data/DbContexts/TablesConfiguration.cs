@@ -18,6 +18,13 @@ namespace Tools.Data.DbContexts
                 m.Property(c => c.IdCliente).ValueGeneratedOnAdd();
             });
 
+            modelBuilder.Entity<User>(m =>
+            {
+                m.ToTable("user");
+                m.HasKey("IdUser");
+                m.Property(c => c.IdUser).ValueGeneratedOnAdd();
+            });
+
         }
     }
 }

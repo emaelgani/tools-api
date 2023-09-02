@@ -17,6 +17,7 @@ namespace Tools.Data
             // Add Repositories.
             service.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             service.AddScoped<IClienteRepository, ClienteRepository>();
+            service.AddScoped<IUserRepository, UserRepository>();
             return service;
         }
     }

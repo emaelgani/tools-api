@@ -23,6 +23,8 @@ namespace Tools.Service
 
             // Add services.
             service.AddScoped<IClienteService, ClienteService>();
+            service.AddScoped<IUserService, UserService>();
+
 
             return service;
         }

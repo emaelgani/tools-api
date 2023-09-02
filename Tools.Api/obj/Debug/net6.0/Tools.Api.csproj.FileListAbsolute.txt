@@ -73,3 +73,11 @@ E:\Proyectos\mauro-ventas\Tools.Api\Tools.Api\obj\Debug\net6.0\refint\Tools.Api.
 E:\Proyectos\mauro-ventas\Tools.Api\Tools.Api\obj\Debug\net6.0\Tools.Api.pdb
 E:\Proyectos\mauro-ventas\Tools.Api\Tools.Api\obj\Debug\net6.0\Tools.Api.genruntimeconfig.cache
 E:\Proyectos\mauro-ventas\Tools.Api\Tools.Api\obj\Debug\net6.0\ref\Tools.Api.dll
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Api\bin\Debug\net6.0\BCrypt.Net-Next.dll
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Api\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Api\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
