@@ -9,6 +9,7 @@ namespace Tools.Service.Mappings
         public ProveedorDTOMapping()
         {
             CreateMap<Proveedor, ProveedorDTO>().ReverseMap();
+            CreateMap<Proveedor, ProveedorWithProductsDTO>();
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Tools.Service.DTOs.Producto;
-using Tools.Shared.DTOs;
+using Tools.Shared.DTOs.Producto;
 
 namespace Tools.Service.Interfaces
 {

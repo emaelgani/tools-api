@@ -1,4 +1,4 @@
-﻿namespace Tools.Shared.DTOs
+﻿namespace Tools.Shared.DTOs.Producto
 {
     //Se genera un DTO en un proyecto de biblioteca compartida.
     //Objeto: Capa DATA necesita acceder a DTO que esta declarado en la capa SERVICE - evitar acoplamiento.

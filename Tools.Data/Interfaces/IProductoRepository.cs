@@ -1,5 +1,5 @@
 ﻿using Tools.Data.Entities;
-using Tools.Shared.DTOs;
+using Tools.Shared.DTOs.Producto;
 
 namespace Tools.Data.Interfaces
 {

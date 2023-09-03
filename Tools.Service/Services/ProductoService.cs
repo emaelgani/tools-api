@@ -9,7 +9,7 @@ using Tools.Data.Interfaces;
 using Tools.Service.DTOs.Producto;
 using Tools.Service.Exceptions;
 using Tools.Service.Interfaces;
-using Tools.Shared.DTOs;
+using Tools.Shared.DTOs.Producto;
 
 namespace Tools.Service.Services
 {

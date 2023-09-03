@@ -29,8 +29,12 @@ namespace Tools.Api.EndPoint
             #endregion
 
             #region Proveedor
+            //GET
+            app.MapGet("/api/Proveedor", ProveedorEndPoints.GetAllProveedoresAsync);
+            app.MapGet("/api/Proveedor/DownloadPrecioLista", ProveedorEndPoints.CreateListaPreciosPdf);
             //POST
             app.MapPost("/api/Proveedor", ProveedorEndPoints.Add);
+            app.MapPost("/AumentarPorcentaje", ProveedorEndPoints.AumentarPorcentajeProveedor);
             //PUT
             app.MapPut("/api/Proveedor", ProveedorEndPoints.Update);
             #endregion
@@ -46,7 +50,6 @@ namespace Tools.Api.EndPoint
             app.MapGet("/api/Producto/ValorTotalStock", ProductoEndPoints.GetValorStockLista);
             app.MapGet("/api/Producto/ValorTotalStockFinanciado", ProductoEndPoints.GetValorStockFinanciado);
             app.MapGet("/api/Producto/ValorTotalStockContado", ProductoEndPoints.GetValorStockContado);
-
             app.MapGet("/api/Producto/DownloadListaPrecios", ProductoEndPoints.CreateListaPreciosPdf);
            
             //PUT

@@ -10,6 +10,7 @@ namespace Tools.Data.DbContexts
         }
 
         public DbSet<Producto> Producto { get; set; } // Agrega un DbSet para la entidad Producto
+        public DbSet<Proveedor> Proveedor { get; set; } // Agrega un DbSet para la entidad Producto
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

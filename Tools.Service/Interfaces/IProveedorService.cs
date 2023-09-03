@@ -1,13 +1,14 @@
-﻿using Tools.Service.DTOs.Proveedor;
+﻿using Microsoft.AspNetCore.Mvc;
+using Tools.Service.DTOs.Proveedor;
 
 namespace Tools.Service.Interfaces
 {
     public interface IProveedorService
     {
-        Task<IList<ProveedorDTO>> GetAllAsync();
+        Task<IList<ProveedorWithProductsDTO>> GetAllAsync();
         Task Update(ProveedorDTO updateProveedor);
         Task Add(ProveedorDTO newProveedor);
         Task AumentarPorcentajeProveedor(ProveedorAumentoDTO proveedorAumento);
-        Task CreatePdfListaPrecios(int idProveedor);
+        Task<IActionResult> CreatePdfListaPrecios(int idProveedor);
     }
 }

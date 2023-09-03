@@ -3,7 +3,7 @@ using System.Data;
 using Tools.Data.DbContexts;
 using Tools.Data.Entities;
 using Tools.Data.Interfaces;
-using Tools.Shared.DTOs;
+using Tools.Shared.DTOs.Producto;
 
 namespace Tools.Data.Repositories
 {
