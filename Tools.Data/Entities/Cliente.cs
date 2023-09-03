@@ -11,5 +11,7 @@
         public string Telefono { get; set; } = string.Empty;
 
         public decimal Deuda { get; set; }
+
+        public IList<Pedido>? Pedidos { get; set; }
     }
 }

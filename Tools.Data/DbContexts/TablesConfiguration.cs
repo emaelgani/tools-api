@@ -43,6 +43,18 @@ namespace Tools.Data.DbContexts
                     .WithMany(pr => pr.Productos)  // Propiedad de navegación en Proveedor (colección de productos)
                     .HasForeignKey(p => p.IdProveedor);  // Clave foránea en Producto
             });
+
+            modelBuilder.Entity<Pedido>(m =>
+            {
+                m.ToTable("pedido");
+                m.HasKey("IdPedido");
+                m.Property(c => c.IdPedido).ValueGeneratedOnAdd();
+
+                // Configurar la relación con Cliente
+                m.HasOne(p => p.Cliente)  // Propiedad de navegación en Pedido
+                    .WithMany(c => c.Pedidos)  // Propiedad de navegación en Cliente (colección de pedidos)
+                    .HasForeignKey(p => p.IdCliente);  // Clave foránea en Pedido
+            });
         }
     }
 }

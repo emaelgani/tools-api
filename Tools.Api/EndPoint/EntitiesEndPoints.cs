@@ -58,6 +58,17 @@ namespace Tools.Api.EndPoint
             //DELETE
             app.MapDelete("/api/Producto/{id}", ProductoEndPoints.Delete);
             #endregion
+
+
+            #region Pedido
+            //GET
+            app.MapGet("/api/Pedido", PedidoEndPoints.GetAllPedidosAsync);
+            //POST
+            app.MapPost("/api/Pedido", PedidoEndPoints.Add);
+            app.MapPost("/api/Pedido/{id}/changestatus", PedidoEndPoints.ChangeStatus);
+            //DELETE
+            app.MapDelete("/api/Pedido/{id}", PedidoEndPoints.Delete);
+            #endregion
         }
     }
 }

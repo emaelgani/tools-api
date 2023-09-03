@@ -20,6 +20,7 @@ namespace Tools.Service.Mappings.Configuration
                 mc.AddProfile(new UserDTOMapping());
                 mc.AddProfile(new ProveedorDTOMapping());
                 mc.AddProfile(new ProductoDTOMapping());
+                mc.AddProfile(new PedidoDTOMapping());
 
             });
 

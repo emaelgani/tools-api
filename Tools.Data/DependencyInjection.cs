@@ -20,6 +20,7 @@ namespace Tools.Data
             service.AddScoped<IUserRepository, UserRepository>();
             service.AddScoped<IProveedorRepository, ProveedorRepository>();
             service.AddScoped<IProductoRepository, ProductoRepository>();
+            service.AddScoped<IPedidoRepository, PedidoRepository>();
             return service;
         }
     }
