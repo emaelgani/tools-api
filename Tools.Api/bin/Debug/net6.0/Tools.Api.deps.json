@@ -443,6 +443,26 @@
           "System.Xml.XDocument": "4.0.11"
         }
       },
+      "PDFsharp/1.50.5147": {
+        "runtime": {
+          "lib/net20/PdfSharp.Charting.dll": {
+            "assemblyVersion": "1.50.5147.0",
+            "fileVersion": "1.50.5147.0"
+          },
+          "lib/net20/PdfSharp.dll": {
+            "assemblyVersion": "1.50.5147.0",
+            "fileVersion": "1.50.5147.0"
+          }
+        },
+        "resources": {
+          "lib/net20/de/PdfSharp.Charting.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net20/de/PdfSharp.resources.dll": {
+            "locale": "de"
+          }
+        }
+      },
       "Pomelo.EntityFrameworkCore.MySql/7.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Relational": "7.0.10",
@@ -1305,7 +1325,8 @@
       "Tools.Data/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Relational": "7.0.10",
-          "Pomelo.EntityFrameworkCore.MySql": "7.0.0"
+          "Pomelo.EntityFrameworkCore.MySql": "7.0.0",
+          "Tools.Shared": "1.0.0"
         },
         "runtime": {
           "Tools.Data.dll": {}
@@ -1317,10 +1338,18 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "BCrypt.Net-Next": "4.0.3",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.21",
-          "Tools.Data": "1.0.0"
+          "PDFsharp": "1.50.5147",
+          "System.Drawing.Common": "4.7.0",
+          "Tools.Data": "1.0.0",
+          "Tools.Shared": "1.0.0"
         },
         "runtime": {
           "Tools.Service.dll": {}
+        }
+      },
+      "Tools.Shared/1.0.0": {
+        "runtime": {
+          "Tools.Shared.dll": {}
         }
       }
     }
@@ -1596,6 +1625,13 @@
       "sha512": "sha512-ypsCvIdCZ4IoYASJHt6tF2fMo7N30NLgV1EbmC+snO490OMl9FvVxmumw14rhReWU3j3g7BYudG6YCrchwHJlA==",
       "path": "netstandard.library/1.6.0",
       "hashPath": "netstandard.library.1.6.0.nupkg.sha512"
+    },
+    "PDFsharp/1.50.5147": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vr5KBIqcXu2hqZ43UTwPR+jqHgMrT5tsPtJvEF+mORKoBNMh3bRWgAwic0U1sT2IVb4PR5m0GyQxnmCz8jBHWg==",
+      "path": "pdfsharp/1.50.5147",
+      "hashPath": "pdfsharp.1.50.5147.nupkg.sha512"
     },
     "Pomelo.EntityFrameworkCore.MySql/7.0.0": {
       "type": "package",
@@ -2177,6 +2213,11 @@
       "sha512": ""
     },
     "Tools.Service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Tools.Shared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

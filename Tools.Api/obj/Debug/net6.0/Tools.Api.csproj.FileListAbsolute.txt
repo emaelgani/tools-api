@@ -81,3 +81,9 @@ E:\Proyectos\mauro-ventas\Tools.Api\Tools.Api\bin\Debug\net6.0\Microsoft.Identit
 E:\Proyectos\mauro-ventas\Tools.Api\Tools.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 E:\Proyectos\mauro-ventas\Tools.Api\Tools.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 E:\Proyectos\mauro-ventas\Tools.Api\Tools.Api\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Api\bin\Debug\net6.0\Tools.Shared.dll
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Api\bin\Debug\net6.0\Tools.Shared.pdb
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Api\bin\Debug\net6.0\PdfSharp.Charting.dll
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Api\bin\Debug\net6.0\PdfSharp.dll
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Api\bin\Debug\net6.0\de\PdfSharp.Charting.resources.dll
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Api\bin\Debug\net6.0\de\PdfSharp.resources.dll

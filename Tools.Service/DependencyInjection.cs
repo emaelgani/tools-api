@@ -24,6 +24,8 @@ namespace Tools.Service
             // Add services.
             service.AddScoped<IClienteService, ClienteService>();
             service.AddScoped<IUserService, UserService>();
+            service.AddScoped<IProveedorService, ProveedorService>();
+            service.AddScoped<IProductoService, ProductoService>();
 
 
             return service;

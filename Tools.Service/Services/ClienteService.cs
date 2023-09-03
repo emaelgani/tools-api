@@ -33,7 +33,14 @@ namespace Tools.Service.Services
 
         public async Task<IList<ClienteDTO>> GetAllAsync()
         {
-            return _mapper.Map<IList<ClienteDTO>>(await _clienteRepo.GetAllAsync());
+            try
+            {
+                return _mapper.Map<IList<ClienteDTO>>(await _clienteRepo.GetAllAsync());
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("An error occurred while getting clients.", ex);
+            }
         }
 
         public async Task<IList<ClienteDTO>> GetFourMoreDebt()

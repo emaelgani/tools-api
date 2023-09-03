@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tools.Api", "Tools.Api\Tools.Api.csproj", "{4F2C2338-D362-4E0B-84FD-E16ECE8F5BF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tools.Api", "Tools.Api\Tools.Api.csproj", "{4F2C2338-D362-4E0B-84FD-E16ECE8F5BF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tools.Data", "Tools.Data\Tools.Data.csproj", "{C95B5B6C-D64F-4555-A671-8DD1FDE9C3AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tools.Data", "Tools.Data\Tools.Data.csproj", "{C95B5B6C-D64F-4555-A671-8DD1FDE9C3AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tools.Service", "Tools.Service\Tools.Service.csproj", "{651F6727-38D3-4C87-8347-E936826DEE1F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tools.Service", "Tools.Service\Tools.Service.csproj", "{651F6727-38D3-4C87-8347-E936826DEE1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tools.Shared", "Tools.Shared\Tools.Shared.csproj", "{A56BD999-B935-4595-B3D2-0DDB33DF4302}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{651F6727-38D3-4C87-8347-E936826DEE1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{651F6727-38D3-4C87-8347-E936826DEE1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{651F6727-38D3-4C87-8347-E936826DEE1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A56BD999-B935-4595-B3D2-0DDB33DF4302}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A56BD999-B935-4595-B3D2-0DDB33DF4302}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A56BD999-B935-4595-B3D2-0DDB33DF4302}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A56BD999-B935-4595-B3D2-0DDB33DF4302}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

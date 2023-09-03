@@ -417,6 +417,16 @@
         "build": {
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
+      },
+      "Tools.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Tools.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Tools.Shared.dll": {}
+        }
       }
     }
   },
@@ -1062,13 +1072,19 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Tools.Shared/1.0.0": {
+      "type": "project",
+      "path": "../Tools.Shared/Tools.Shared.csproj",
+      "msbuildProject": "../Tools.Shared/Tools.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Microsoft.EntityFrameworkCore.Relational >= 7.0.10",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.10",
-      "Pomelo.EntityFrameworkCore.MySql >= 7.0.0"
+      "Pomelo.EntityFrameworkCore.MySql >= 7.0.0",
+      "Tools.Shared >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1097,7 +1113,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Shared\\Tools.Shared.csproj": {
+              "projectPath": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Shared\\Tools.Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

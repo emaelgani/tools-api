@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Tools.Data.Entities;
 
 namespace Tools.Data.DbContexts
 {
@@ -7,6 +8,10 @@ namespace Tools.Data.DbContexts
         public HerramientasDbContext(DbContextOptions<HerramientasDbContext> options) : base(options)
         {
         }
+
+        public DbSet<Producto> Producto { get; set; } // Agrega un DbSet para la entidad Producto
+
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

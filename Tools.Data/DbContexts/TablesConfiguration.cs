@@ -25,6 +25,24 @@ namespace Tools.Data.DbContexts
                 m.Property(c => c.IdUser).ValueGeneratedOnAdd();
             });
 
+            modelBuilder.Entity<Proveedor>(m =>
+            {
+                m.ToTable("proveedor");
+                m.HasKey("IdProveedor");
+                m.Property(c => c.IdProveedor).ValueGeneratedOnAdd();
+            });
+
+            modelBuilder.Entity<Producto>(m =>
+            {
+                m.ToTable("producto");
+                m.HasKey("IdProducto");
+                m.Property(c => c.IdProducto).ValueGeneratedOnAdd();
+
+                // Configurar la relación con Proveedor
+                m.HasOne(p => p.Proveedor)  // Propiedad de navegación en Producto
+                    .WithMany(pr => pr.Productos)  // Propiedad de navegación en Proveedor (colección de productos)
+                    .HasForeignKey(p => p.IdProveedor);  // Clave foránea en Producto
+            });
         }
     }
 }

@@ -1,5 +1,7 @@
 ﻿
+using Microsoft.AspNetCore.Mvc;
 using Tools.Api.EndPoint.EndPoints;
+using Tools.Service.Interfaces;
 
 namespace Tools.Api.EndPoint
 {
@@ -26,7 +28,33 @@ namespace Tools.Api.EndPoint
             app.MapPut("/api/Cliente", ClienteEndPoints.Update);
             #endregion
 
+            #region Proveedor
+            //POST
+            app.MapPost("/api/Proveedor", ProveedorEndPoints.Add);
+            //PUT
+            app.MapPut("/api/Proveedor", ProveedorEndPoints.Update);
+            #endregion
 
+
+            #region Producto
+            //POST
+            app.MapPost("/api/Producto", ProductoEndPoints.Add);
+
+            //GET
+            app.MapGet("/api/Producto", ProductoEndPoints.GetProductos);
+            app.MapGet("/api/Producto/{id}", ProductoEndPoints.GetProducto);
+            app.MapGet("/api/Producto/ValorTotalStock", ProductoEndPoints.GetValorStockLista);
+            app.MapGet("/api/Producto/ValorTotalStockFinanciado", ProductoEndPoints.GetValorStockFinanciado);
+            app.MapGet("/api/Producto/ValorTotalStockContado", ProductoEndPoints.GetValorStockContado);
+
+            app.MapGet("/api/Producto/DownloadListaPrecios", ProductoEndPoints.CreateListaPreciosPdf);
+           
+            //PUT
+            app.MapPut("/api/Producto", ProductoEndPoints.Update);
+
+            //DELETE
+            app.MapDelete("/api/Producto/{id}", ProductoEndPoints.Delete);
+            #endregion
         }
     }
 }

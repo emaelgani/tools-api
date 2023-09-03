@@ -18,6 +18,8 @@ namespace Tools.Data
             service.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             service.AddScoped<IClienteRepository, ClienteRepository>();
             service.AddScoped<IUserRepository, UserRepository>();
+            service.AddScoped<IProveedorRepository, ProveedorRepository>();
+            service.AddScoped<IProductoRepository, ProductoRepository>();
             return service;
         }
     }

@@ -18,6 +18,8 @@ namespace Tools.Service.Mappings.Configuration
                 // Agregar los nuevos profiles aqui.
                 mc.AddProfile(new ClienteDTOMapping());
                 mc.AddProfile(new UserDTOMapping());
+                mc.AddProfile(new ProveedorDTOMapping());
+                mc.AddProfile(new ProductoDTOMapping());
 
             });
 

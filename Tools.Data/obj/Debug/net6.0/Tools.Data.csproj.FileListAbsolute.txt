@@ -12,3 +12,6 @@ E:\Proyectos\mauro-ventas\Tools.Api\Tools.Data\obj\Debug\net6.0\refint\Tools.Dat
 E:\Proyectos\mauro-ventas\Tools.Api\Tools.Data\obj\Debug\net6.0\Tools.Data.pdb
 E:\Proyectos\mauro-ventas\Tools.Api\Tools.Data\obj\Debug\net6.0\Tools.Data.genruntimeconfig.cache
 E:\Proyectos\mauro-ventas\Tools.Api\Tools.Data\obj\Debug\net6.0\ref\Tools.Data.dll
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Data\bin\Debug\net6.0\Tools.Shared.dll
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Data\bin\Debug\net6.0\Tools.Shared.pdb
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Data\obj\Debug\net6.0\Tools.Data.csproj.CopyComplete

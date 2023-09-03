@@ -11,9 +11,12 @@
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
     <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.21" />
+    <PackageReference Include="PdfSharp" Version="1.50.5147" />
+    <PackageReference Include="System.Drawing.Common" Version="4.7.0" />
   </ItemGroup>
 
 	<ItemGroup>
 		<ProjectReference Include="..\Tools.Data\Tools.Data.csproj" />
+		<ProjectReference Include="..\Tools.Shared\Tools.Shared.csproj" />
 	</ItemGroup>
 </Project>

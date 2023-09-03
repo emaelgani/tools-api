@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Http;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
@@ -28,7 +27,7 @@ namespace Tools.Service.Services
             _configuration = configuration;
             _httpContextAccessor = httpContextAccessor;
         }
-        public Task<UserResponseDTO> CheckToken()
+        public Task<UserResponseDTO?> CheckToken()
         {
             try
             {
@@ -60,15 +59,15 @@ namespace Tools.Service.Services
                     Token = token,
                 };
 
-                return Task.FromResult(response);
+                return Task.FromResult(response)!;
             }
             catch (NotFoundException)
             {
-                return Task.FromResult<UserResponseDTO>(null);
+                return Task.FromResult<UserResponseDTO>(null!)!;
             }
             catch (UnauthorizedAccessException)
             {
-                return Task.FromResult<UserResponseDTO>(null);
+                return Task.FromResult<UserResponseDTO>(null!)!;
             }
             catch (Exception ex)
             {
