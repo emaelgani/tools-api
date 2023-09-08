@@ -1,4 +1,4 @@
-﻿namespace Tools.Service.DTOs
+﻿namespace Tools.Service.DTOs.Cliente
 {
     public class ClienteDTO
     {

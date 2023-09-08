@@ -1,5 +1,5 @@
 ﻿using System.Net;
-using Tools.Service.DTOs;
+using Tools.Service.DTOs.Cliente;
 using Tools.Service.Exceptions;
 using Tools.Service.Interfaces;
 

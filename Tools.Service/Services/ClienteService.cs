@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using Tools.Data.Entities;
 using Tools.Data.Interfaces;
-using Tools.Service.DTOs;
+using Tools.Service.DTOs.Cliente;
 using Tools.Service.Exceptions;
 using Tools.Service.Interfaces;
 

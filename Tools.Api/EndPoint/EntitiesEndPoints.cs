@@ -39,7 +39,6 @@ namespace Tools.Api.EndPoint
             app.MapPut("/api/Proveedor", ProveedorEndPoints.Update);
             #endregion
 
-
             #region Producto
             //POST
             app.MapPost("/api/Producto", ProductoEndPoints.Add);
@@ -59,7 +58,6 @@ namespace Tools.Api.EndPoint
             app.MapDelete("/api/Producto/{id}", ProductoEndPoints.Delete);
             #endregion
 
-
             #region Pedido
             //GET
             app.MapGet("/api/Pedido", PedidoEndPoints.GetAllPedidosAsync);
@@ -69,6 +67,15 @@ namespace Tools.Api.EndPoint
             //DELETE
             app.MapDelete("/api/Pedido/{id}", PedidoEndPoints.Delete);
             #endregion
+
+            #region Pago
+            //POST
+            app.MapPost("/api/Pago", PagoEndPoints.Add);
+            app.MapGet("/api/Pago/LiquidezDigital", PagoEndPoints.GetLiquidezDigital);
+            app.MapGet("/api/Pago/LiquidezEfectivo", PagoEndPoints.GetLiquidezEfectivo);
+            #endregion
+
+
         }
     }
 }

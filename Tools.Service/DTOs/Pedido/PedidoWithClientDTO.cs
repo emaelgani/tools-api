@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Tools.Service.DTOs.Cliente;
 
 namespace Tools.Service.DTOs.Pedido
 {

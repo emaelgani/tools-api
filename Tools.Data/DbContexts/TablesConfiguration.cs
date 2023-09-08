@@ -32,6 +32,34 @@ namespace Tools.Data.DbContexts
                 m.Property(c => c.IdProveedor).ValueGeneratedOnAdd();
             });
 
+
+            modelBuilder.Entity<MetodoPago>(m =>
+            {
+                m.ToTable("metodopago");
+                m.HasKey("IdMetodoPago");
+                m.Property(c => c.IdMetodoPago).ValueGeneratedOnAdd();
+            });
+
+            modelBuilder.Entity<Pago>(m =>
+            {
+                m.ToTable("pago");
+                m.HasKey("IdPago");
+                m.Property(c => c.IdPago).ValueGeneratedOnAdd();
+
+                // Relación con Cliente
+                m.HasOne(p => p.Cliente)
+                    .WithMany()
+                    .HasForeignKey(p => p.IdCliente)
+                    .IsRequired();
+
+                // Relación con MetodoPago
+                m.HasOne(p => p.MetodoPago)
+                    .WithMany()
+                    .HasForeignKey(p => p.IdMetodoPago)
+                    .IsRequired();
+
+            });
+
             modelBuilder.Entity<Producto>(m =>
             {
                 m.ToTable("producto");
