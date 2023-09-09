@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Tools.Service.DTOs.Proveedor;
+using Tools.Shared.DTOs.Proveedor;
 
 namespace Tools.Service.Interfaces
 {

@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
 using Tools.Data.Entities;
 using Tools.Data.Interfaces;
-using Tools.Service.DTOs.Cliente;
-using Tools.Service.Exceptions;
 using Tools.Service.Interfaces;
+using Tools.Shared.DTOs.Cliente;
+using Tools.Shared.Exceptions;
 
 namespace Tools.Service.Services
 {

@@ -40,6 +40,13 @@ namespace Tools.Data.DbContexts
                 m.Property(c => c.IdMetodoPago).ValueGeneratedOnAdd();
             });
 
+            modelBuilder.Entity<TipoPrecio>(m =>
+            {
+                m.ToTable("tipoprecio");
+                m.HasKey("IdTipoPrecio");
+                m.Property(c => c.IdTipoPrecio).ValueGeneratedOnAdd();
+            });
+
             modelBuilder.Entity<Pago>(m =>
             {
                 m.ToTable("pago");
@@ -82,6 +89,46 @@ namespace Tools.Data.DbContexts
                 m.HasOne(p => p.Cliente)  // Propiedad de navegación en Pedido
                     .WithMany(c => c.Pedidos)  // Propiedad de navegación en Cliente (colección de pedidos)
                     .HasForeignKey(p => p.IdCliente);  // Clave foránea en Pedido
+            });
+
+            modelBuilder.Entity<Venta>(m =>
+            {
+                m.ToTable("venta");
+                m.HasKey("IdVenta");
+                m.Property(c => c.IdVenta).ValueGeneratedOnAdd();
+
+                // Configurar la relación con Cliente
+                m.HasOne(v => v.Cliente)  // Propiedad de navegación en Venta
+                    .WithMany(c => c.Ventas)  // Propiedad de navegación en Cliente (colección de ventas)
+                    .HasForeignKey(v => v.IdCliente)  // Clave foránea en Venta
+                    .IsRequired(); 
+            });
+
+            modelBuilder.Entity<VentaProducto>(m =>
+            {
+                m.ToTable("ventaproducto");
+                m.HasKey("IdVentaProducto");
+                m.Property(c => c.IdVenta).ValueGeneratedOnAdd();
+
+
+                // Configurar la relación con Venta
+                m.HasOne(vp => vp.Venta)  // Propiedad de navegación en VentaProducto
+                    .WithMany(v => v.VentaProductos)  // Propiedad de navegación en Venta (colección de VentaProductos)
+                    .HasForeignKey(vp => vp.IdVenta)  // Clave foránea en VentaProducto
+                    .IsRequired();
+
+                // Configurar la relación con Producto
+                m.HasOne(vp => vp.Producto)  // Propiedad de navegación en VentaProducto
+                    .WithMany(p => p.VentaProductos)  // Propiedad de navegación en Producto (colección de VentaProductos)
+                    .HasForeignKey(vp => vp.IdProducto)  // Clave foránea en VentaProducto
+                    .IsRequired();
+
+                // Configurar la relación con TipoPrecio
+                m.HasOne(vp => vp.TipoPrecio)  // Propiedad de navegación en VentaProducto
+                    .WithMany(tp => tp.VentaProductos)  // Propiedad de navegación en TipoPrecio (colección de VentaProductos)
+                    .HasForeignKey(vp => vp.IdTipoPrecio)  // Clave foránea en VentaProducto
+                    .IsRequired();
+
             });
         }
     }

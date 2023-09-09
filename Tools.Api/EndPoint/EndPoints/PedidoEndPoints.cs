@@ -1,7 +1,7 @@
 ﻿using System.Net;
-using Tools.Service.DTOs.Pedido;
-using Tools.Service.Exceptions;
 using Tools.Service.Interfaces;
+using Tools.Shared.DTOs.Pedido;
+using Tools.Shared.Exceptions;
 
 namespace Tools.Api.EndPoint.EndPoints
 {

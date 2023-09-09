@@ -7,9 +7,9 @@ using System.Security.Claims;
 using System.Text;
 using Tools.Data.Entities;
 using Tools.Data.Interfaces;
-using Tools.Service.DTOs.User;
-using Tools.Service.Exceptions;
 using Tools.Service.Interfaces;
+using Tools.Shared.DTOs.User;
+using Tools.Shared.Exceptions;
 
 namespace Tools.Service.Services
 {

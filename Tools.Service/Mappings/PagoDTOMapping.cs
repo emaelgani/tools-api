@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using Tools.Data.Entities;
-using Tools.Service.DTOs.Pago;
+using Tools.Shared.DTOs.Pago;
 
 namespace Tools.Service.Mappings
 {
@@ -8,7 +8,7 @@ namespace Tools.Service.Mappings
     {
         public PagoDTOMapping()
         {
-            CreateMap<Pago, PagoDTO>().ReverseMap();
+            CreateMap<PagoAddDTO,Pago>();
         }
     }
 }

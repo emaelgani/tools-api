@@ -69,12 +69,23 @@ namespace Tools.Api.EndPoint
             #endregion
 
             #region Pago
+            //GET
+            app.MapGet("/api/Pago", PagoEndPoints.GetAllPagosAsync);
+            app.MapGet("/PagosPorMes", PagoEndPoints.GetPagosPorMes);
+            app.MapGet("/PagosYVentasPorMes", PagoEndPoints.GetPagosYVentasPorMes);
+
             //POST
             app.MapPost("/api/Pago", PagoEndPoints.Add);
             app.MapGet("/api/Pago/LiquidezDigital", PagoEndPoints.GetLiquidezDigital);
             app.MapGet("/api/Pago/LiquidezEfectivo", PagoEndPoints.GetLiquidezEfectivo);
             #endregion
 
+            #region Venta
+            //GET
+            app.MapGet("/api/Venta", VentaEndPoints.GetVentas);
+            //POST
+            app.MapPost("/api/Venta", VentaEndPoints.Register);
+            #endregion
 
         }
     }

@@ -1,15 +1,13 @@
 ﻿using AutoMapper;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using PdfSharp.Drawing;
 using PdfSharp.Pdf;
 using System.Globalization;
 using Tools.Data.Entities;
 using Tools.Data.Interfaces;
-using Tools.Service.DTOs.Producto;
-using Tools.Service.Exceptions;
 using Tools.Service.Interfaces;
 using Tools.Shared.DTOs.Producto;
+using Tools.Shared.Exceptions;
 
 namespace Tools.Service.Services
 {

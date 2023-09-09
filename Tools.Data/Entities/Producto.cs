@@ -16,5 +16,7 @@
 
         //Navigation properties
         public Proveedor? Proveedor { get; set; }
+        public List<VentaProducto>? VentaProductos { get; set; }
+
     }
 }

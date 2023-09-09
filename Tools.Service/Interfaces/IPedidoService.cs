@@ -1,4 +1,4 @@
-﻿using Tools.Service.DTOs.Pedido;
+﻿using Tools.Shared.DTOs.Pedido;
 
 namespace Tools.Service.Interfaces
 {

@@ -1,9 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Net;
-using Tools.Service.DTOs;
-using Tools.Service.DTOs.Proveedor;
-using Tools.Service.Exceptions;
 using Tools.Service.Interfaces;
+using Tools.Shared.DTOs.Proveedor;
+using Tools.Shared.Exceptions;
 
 namespace Tools.Api.EndPoint.EndPoints
 {

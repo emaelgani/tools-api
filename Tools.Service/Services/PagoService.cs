@@ -1,10 +1,9 @@
 ﻿using AutoMapper;
-using Microsoft.EntityFrameworkCore;
 using Tools.Data.Entities;
 using Tools.Data.Interfaces;
-using Tools.Service.DTOs.Pago;
-using Tools.Service.Exceptions;
 using Tools.Service.Interfaces;
+using Tools.Shared.DTOs.Pago;
+using Tools.Shared.Exceptions;
 
 namespace Tools.Service.Services
 {
@@ -21,7 +20,7 @@ namespace Tools.Service.Services
             _clienteRepo = clienteRepo;
         }
 
-        public async Task Add(PagoDTO pagoDto)
+        public async Task Add(PagoAddDTO pagoDto)
         {
             try
             {
@@ -48,9 +47,16 @@ namespace Tools.Service.Services
             }
         }
 
-        public Task<IList<PagoDTO>> GetAllAsync()
+        public async Task<IList<PagoListDTO>> GetAllAsync()
         {
-            throw new NotImplementedException();
+            try
+            {
+                return await _pagoRepo.GetAllAsync();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("An error occurred getting pagos.", ex);
+            }
         }
 
         public async Task<decimal> GetLiquidezDigital()
@@ -77,14 +83,28 @@ namespace Tools.Service.Services
             }
         }
 
-        public Task<IList<PagoPorMesDTO>> GetPagosPorMes()
+        public async Task<IList<PagoPorMesDTO>> GetPagosPorMes()
         {
-            throw new NotImplementedException();
+            try
+            {
+                return await _pagoRepo.GetPagosPorMes();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al obtener pagos por mes.", ex);
+            }
         }
 
-        public Task<PagosYVentasPorMesDTO> GetPagosYVentasPorMes()
+        public async Task<PagosYVentasPorMesDTO> GetPagosYVentasPorMes()
         {
-            throw new NotImplementedException();
+            try
+            {
+                return await _pagoRepo.GetPagosYVentasPorMes();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al obtener pagos y ventas por mes.", ex);
+            }
         }
     }
 }

@@ -1,5 +1,4 @@
-﻿
-using AutoMapper;
+﻿using AutoMapper;
 
 namespace Tools.Service.Mappings.Configuration
 {
@@ -22,6 +21,8 @@ namespace Tools.Service.Mappings.Configuration
                 mc.AddProfile(new ProductoDTOMapping());
                 mc.AddProfile(new PedidoDTOMapping());
                 mc.AddProfile(new PagoDTOMapping());
+                mc.AddProfile(new VentaDTOMapping());
+                
 
             });
 

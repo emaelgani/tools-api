@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using Tools.Data.Entities;
-using Tools.Service.DTOs.Cliente;
+using Tools.Shared.DTOs.Cliente;
 
 namespace Tools.Service.Mappings
 {

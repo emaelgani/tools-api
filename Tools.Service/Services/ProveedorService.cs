@@ -5,9 +5,9 @@ using PdfSharp.Pdf;
 using System.Globalization;
 using Tools.Data.Entities;
 using Tools.Data.Interfaces;
-using Tools.Service.DTOs.Proveedor;
-using Tools.Service.Exceptions;
 using Tools.Service.Interfaces;
+using Tools.Shared.DTOs.Proveedor;
+using Tools.Shared.Exceptions;
 
 namespace Tools.Service.Services
 {

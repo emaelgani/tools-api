@@ -1,4 +1,4 @@
-﻿using Tools.Service.DTOs.Cliente;
+﻿using Tools.Shared.DTOs.Cliente;
 
 namespace Tools.Service.Interfaces
 {

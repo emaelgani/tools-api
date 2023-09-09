@@ -1,10 +1,7 @@
-﻿using Microsoft.IdentityModel.Tokens;
-using System.IdentityModel.Tokens.Jwt;
-using System.Net;
-using System.Security.Claims;
-using Tools.Service.DTOs.User;
-using Tools.Service.Exceptions;
+﻿using System.Net;
 using Tools.Service.Interfaces;
+using Tools.Shared.DTOs.User;
+using Tools.Shared.Exceptions;
 
 namespace Tools.Api.EndPoint.EndPoints
 {

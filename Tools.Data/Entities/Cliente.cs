@@ -13,5 +13,6 @@
         public decimal Deuda { get; set; }
 
         public IList<Pedido>? Pedidos { get; set; }
+        public IList<Venta>? Ventas { get; set; }
     }
 }

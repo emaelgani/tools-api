@@ -1,11 +1,11 @@
-﻿using Tools.Service.DTOs.Pago;
+﻿using Tools.Shared.DTOs.Pago;
 
 namespace Tools.Service.Interfaces
 {
     public interface IPagoService
     {
-        public Task Add(PagoDTO pagoDto);
-        public Task<IList<PagoDTO>> GetAllAsync();
+        public Task Add(PagoAddDTO pagoDto);
+        public Task<IList<PagoListDTO>> GetAllAsync();
         public Task<IList<PagoPorMesDTO>> GetPagosPorMes();
         public Task<PagosYVentasPorMesDTO> GetPagosYVentasPorMes();
         public Task<decimal> GetLiquidezEfectivo();

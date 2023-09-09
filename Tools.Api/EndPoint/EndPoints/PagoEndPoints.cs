@@ -1,13 +1,55 @@
 ﻿using System.Net;
-using Tools.Service.DTOs.Cliente;
-using Tools.Service.DTOs.Pago;
 using Tools.Service.Interfaces;
+using Tools.Shared.DTOs.Pago;
 
 namespace Tools.Api.EndPoint.EndPoints
 {
     internal static class PagoEndPoints
     {
-        public static async Task Add(HttpContext context, IPagoService pagoSrv, PagoDTO pagoDto)
+
+        public static async Task<IList<PagoListDTO>> GetAllPagosAsync(HttpContext context, IPagoService pagoSrv)
+        {
+            try
+            {
+                return await pagoSrv.GetAllAsync();
+            }
+            catch (Exception ex)
+            {
+                context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
+                await context.Response.WriteAsync($"An error occurred: {ex}");
+                return new List<PagoListDTO>();
+            }
+        }
+
+        public static async Task<IList<PagoPorMesDTO>> GetPagosPorMes(HttpContext context, IPagoService pagoSrv)
+        {
+            try
+            {
+                return await pagoSrv.GetPagosPorMes();
+            }
+            catch (Exception ex)
+            {
+                context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
+                await context.Response.WriteAsync($"An error occurred: {ex}");
+                return new List<PagoPorMesDTO>();
+            }
+        }
+
+        public static async Task<PagosYVentasPorMesDTO> GetPagosYVentasPorMes(HttpContext context, IPagoService pagoSrv)
+        {
+            try
+            {
+                return await pagoSrv.GetPagosYVentasPorMes();
+            }
+            catch (Exception ex)
+            {
+                context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
+                await context.Response.WriteAsync($"An error occurred: {ex}");
+                return new PagosYVentasPorMesDTO();
+            }
+        }
+
+        public static async Task Add(HttpContext context, IPagoService pagoSrv, PagoAddDTO pagoDto)
         {
             try
             {
