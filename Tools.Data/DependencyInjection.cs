@@ -24,6 +24,7 @@ namespace Tools.Data
             service.AddScoped<IPagoRepository, PagoRepository>();
             service.AddScoped<IVentaRepository, VentaRepository>();
             service.AddScoped<IVentaProductoRepository, VentaProductoRepository>();
+            service.AddScoped<ICompromisoRepository, CompromisoRepository>();
             return service;
         }
     }

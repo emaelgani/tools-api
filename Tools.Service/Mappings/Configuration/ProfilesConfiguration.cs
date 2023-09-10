@@ -22,6 +22,7 @@ namespace Tools.Service.Mappings.Configuration
                 mc.AddProfile(new PedidoDTOMapping());
                 mc.AddProfile(new PagoDTOMapping());
                 mc.AddProfile(new VentaDTOMapping());
+                mc.AddProfile(new CompromisoDTOMapping());
                 
 
             });

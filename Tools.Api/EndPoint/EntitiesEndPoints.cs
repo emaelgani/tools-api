@@ -22,6 +22,7 @@ namespace Tools.Api.EndPoint
             app.MapGet("/api/Cliente", ClienteEndPoints.GetAllClientesAsync);
             app.MapGet("/api/Cliente/TotalDeuda", ClienteEndPoints.GetTotalDebt);
             app.MapGet("/api/Cliente/CuatroConMasDeuda", ClienteEndPoints.GetFourMoreDebt);
+            app.MapGet("/api/Cliente/ClientesCompraronProducto/{idProducto}", ClienteEndPoints.GetClientesVentaByProducto);
             //POST
             app.MapPost("/api/Cliente", ClienteEndPoints.Add);
             //PUT
@@ -83,10 +84,31 @@ namespace Tools.Api.EndPoint
             #region Venta
             //GET
             app.MapGet("/api/Venta", VentaEndPoints.GetVentas);
+            app.MapGet("/CobranzasYVentas", VentaEndPoints.GetCobranzaYVenta);
+            app.MapGet("/VentasPorMes", VentaEndPoints.GetVentasPorMes);
+            app.MapGet("/api/Ventas/{idVenta}/productos", VentaEndPoints.GetVentaProductos);
+            app.MapGet("/VentasPorMesByIdProducto", VentaEndPoints.GetVentasPorMesByIdProducto);
+            app.MapGet("/QuinceProductosMasVendidosPorCliente", VentaEndPoints.GetQuinceProductosMasCompradosPorClientes);
             //POST
             app.MapPost("/api/Venta", VentaEndPoints.Register);
             #endregion
 
+            #region Compromiso
+            // GET 
+            app.MapGet("/api/Compromiso", CompromisoEndPoints.GetAllAsync);
+            app.MapGet("/api/Compromiso/{idCompromiso}", CompromisoEndPoints.GetByIdCompromiso);
+            app.MapGet("/api/Compromiso/MontoTotalCompromisosNoPagados", CompromisoEndPoints.GetMontoCompromisosNoPagados);
+            app.MapGet("/api/Compromiso/MontoTotalEfectivo", CompromisoEndPoints.GetTotalEfectivo);
+            app.MapGet("/api/Compromiso/MontoTotalDigital", CompromisoEndPoints.GetTotalDigital);
+            app.MapGet("/api/Compromiso/CompromisosNoSaldadosHoy", CompromisoEndPoints.GetCompromisosNoSaldadosDelDia);
+            app.MapGet("/Gastos", CompromisoEndPoints.GetGastos);
+            //PUT
+            app.MapPut("/api/Compromiso", CompromisoEndPoints.Update);
+            //POST
+            app.MapPost("/api/Compromiso", CompromisoEndPoints.Add);
+            //DELETE
+            app.MapDelete("/api/Compromiso/{idCompromiso}", CompromisoEndPoints.Delete);
+            #endregion
         }
     }
 }

@@ -32,5 +32,12 @@ namespace Tools.Service.Interfaces
         /// </summary>
         /// <returns></returns>
         public Task<IList<ClienteDTO>> GetFourMoreDebt();
+
+        /// <summary>
+        /// Devuelve los clientes que compraron el producto
+        /// </summary>
+        /// <param name="idProducto"></param>
+        /// <returns></returns>
+        public Task<IList<ClienteVentaProductoDTO>> GetClientByIdProduct(int idProducto);
     }
 }

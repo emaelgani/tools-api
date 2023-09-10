@@ -79,6 +79,19 @@ namespace Tools.Data.DbContexts
                     .HasForeignKey(p => p.IdProveedor);  // Clave foránea en Producto
             });
 
+            modelBuilder.Entity<Compromiso>(m =>
+            {
+                m.ToTable("compromiso");
+                m.HasKey("IdCompromiso");
+                m.Property(c => c.IdCompromiso).ValueGeneratedOnAdd();
+               
+            });
+
+            modelBuilder.Entity<Compromiso>()
+               .HasOne(c => c.Proveedor) // Propiedad de navegación en Compromiso
+               .WithMany() // No necesitas una propiedad de navegación en Proveedor
+               .HasForeignKey(c => c.IdProveedor); // Clave foránea en Compromiso
+
             modelBuilder.Entity<Pedido>(m =>
             {
                 m.ToTable("pedido");

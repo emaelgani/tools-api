@@ -16,6 +16,7 @@ namespace Tools.Data.DbContexts
         public DbSet<Venta> Venta { get; set; } // Agrega un DbSet para la entidad Venta
         public DbSet<Cliente> Cliente { get; set; } // Agrega un DbSet para la entidad Cliente
         public DbSet<VentaProducto> VentaProducto { get; set; } // Agrega un DbSet para la entidad VentaProducto
+        public DbSet<Compromiso> Compromiso { get; set; } // Agrega un DbSet para la entidad VentaProducto
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

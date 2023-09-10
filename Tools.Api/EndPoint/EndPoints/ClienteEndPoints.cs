@@ -21,6 +21,20 @@ namespace Tools.Api.EndPoint
             }
         }
 
+        public static async Task<IList<ClienteVentaProductoDTO>> GetClientesVentaByProducto(HttpContext context, IClienteService clienteSrv, int idProducto)
+        {
+            try
+            {
+                return await clienteSrv.GetClientByIdProduct(idProducto);
+            }
+            catch (Exception ex)
+            {
+                context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
+                await context.Response.WriteAsync($"An error occurred: {ex}");
+                return new List<ClienteVentaProductoDTO>();
+            }
+        }
+
         public static async Task<IList<ClienteDTO>> GetFourMoreDebt(HttpContext context, IClienteService clienteSrv)
         {
             try

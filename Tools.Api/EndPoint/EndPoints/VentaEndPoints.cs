@@ -1,5 +1,7 @@
 ﻿using System.Net;
 using Tools.Service.Interfaces;
+using Tools.Shared.DTOs.Pago;
+using Tools.Shared.DTOs.Producto;
 using Tools.Shared.DTOs.Venta;
 
 namespace Tools.Api.EndPoint.EndPoints
@@ -36,6 +38,76 @@ namespace Tools.Api.EndPoint.EndPoints
                 context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
                 await context.Response.WriteAsync($"An error occurred: {ex}");
                 return new List<VentaDTO>();
+            }
+        }
+
+        public static async Task<IList<VentaPorMesDTO>> GetVentasPorMes(HttpContext context, IVentaService ventaSrv)
+        {
+            try
+            {
+                return await ventaSrv.GetVentasPorMes();
+            }
+            catch (Exception ex)
+            {
+                context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
+                await context.Response.WriteAsync($"An error occurred: {ex}");
+                return new List<VentaPorMesDTO>();
+            }
+        }
+
+        public static async Task<IList<VentaProductoDTO>> GetVentaProductos(HttpContext context, IVentaService ventaSrv, int idVenta)
+        {
+            try
+            {
+                return await ventaSrv.GetVentaProductos(idVenta);
+            }
+            catch (Exception ex)
+            {
+                context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
+                await context.Response.WriteAsync($"An error occurred: {ex}");
+                return new List<VentaProductoDTO>();
+            }
+        }
+
+        public static async Task<IList<VentaPorMesDTO>> GetVentasPorMesByIdProducto(HttpContext context, IVentaService ventaSrv, int idProducto)
+        {
+            try
+            {
+                return await ventaSrv.GetVentasPorMesByIdProducto(idProducto);
+            }
+            catch (Exception ex)
+            {
+                context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
+                await context.Response.WriteAsync($"An error occurred: {ex}");
+                return new List<VentaPorMesDTO>();
+            }
+        }
+
+        public static async Task<IList<ProductoCompradoPorClienteDTO>> GetQuinceProductosMasCompradosPorClientes(HttpContext context, IVentaService ventaSrv, string fechaInicio, string fechaFin)
+        {
+            try
+            {
+                return await ventaSrv.GetQuinceProductosMasCompradosPorClientes(fechaInicio, fechaFin);
+            }
+            catch (Exception ex)
+            {
+                context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
+                await context.Response.WriteAsync($"An error occurred: {ex}");
+                return new List<ProductoCompradoPorClienteDTO>();
+            }
+        }
+
+        public static async Task<CobranzasYVentasDTO?> GetCobranzaYVenta(HttpContext context, IVentaService ventaSrv, string fechaInicio, string fechaFin)
+        {
+            try
+            {
+                return await ventaSrv.GetCobranzaYVenta(fechaInicio, fechaFin);
+            }
+            catch (Exception ex)
+            {
+                context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
+                await context.Response.WriteAsync($"An error occurred: {ex}");
+                return null;
             }
         }
     }

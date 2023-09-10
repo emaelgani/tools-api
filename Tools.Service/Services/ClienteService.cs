@@ -43,6 +43,19 @@ namespace Tools.Service.Services
             }
         }
 
+        public async Task<IList<ClienteVentaProductoDTO>> GetClientByIdProduct(int idProducto)
+        {
+            try
+            {
+                return await _clienteRepo.GetClientesVentaByProducto(idProducto);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
         public async Task<IList<ClienteDTO>> GetFourMoreDebt()
         {
             try

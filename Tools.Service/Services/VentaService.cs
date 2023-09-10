@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using Microsoft.EntityFrameworkCore;
 using Tools.Data.Entities;
 using Tools.Data.Interfaces;
 using Tools.Service.Interfaces;
@@ -96,24 +95,46 @@ namespace Tools.Service.Services
             }
         }
 
-        public Task<CobranzasYVentasDTO> GetCobranzaYVenta(string fechaInicio, string fechaFin)
+        public async Task<CobranzasYVentasDTO> GetCobranzaYVenta(string fechaInicio, string fechaFin)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return await _ventaRepo.GetCobranzaYVenta(fechaInicio, fechaFin);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error", ex);
+            }
         }
 
+        //TODO: revisar si eliminar metodo
         public Task<IList<ProductosPorVentaDTO>> GetProductosPorVentas(string fechaInicio, string fechaFin)
         {
             throw new NotImplementedException();
         }
 
-        public Task<IList<ProductoCompradoPorClienteDTO>> GetQuinceProductosMasCompradosPorClientes(string fechaInicio, string fechaFin)
+        public async Task<IList<ProductoCompradoPorClienteDTO>> GetQuinceProductosMasCompradosPorClientes(string fechaInicio, string fechaFin)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return await _ventaRepo.GetQuinceProductosMasCompradosPorClientes(fechaInicio, fechaFin);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error", ex);
+            }
         }
 
-        public Task<IList<VentaProductoDTO>> GetVentaProductos(int idVenta)
+        public async Task<IList<VentaProductoDTO>> GetVentaProductos(int idVenta)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return await _ventaRepo.GetVentaProductos(idVenta);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error", ex);
+            }
         }
 
         public async Task<IList<VentaDTO>> GetVentas()
@@ -128,14 +149,28 @@ namespace Tools.Service.Services
             }
         }
 
-        public Task<IList<VentaPorMesDTO>> GetVentasPorMes()
+        public async Task<IList<VentaPorMesDTO>> GetVentasPorMes()
         {
-            throw new NotImplementedException();
+            try
+            {
+                return await _ventaRepo.GetVentasPorMes();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error", ex);
+            }
         }
 
-        public Task<IList<VentaPorMesDTO>> GetVentasPorMesByIdProducto(int idProducto)
+        public async Task<IList<VentaPorMesDTO>> GetVentasPorMesByIdProducto(int idProducto)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return await _ventaRepo.GetVentasPorMesByIdProducto(idProducto);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error", ex);
+            }
         }
     }
 }
