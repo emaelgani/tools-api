@@ -17,7 +17,7 @@ namespace Tools.Api.EndPoint
             catch (Exception ex)
             {
                 context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
-                await context.Response.WriteAsync($"An error occurred: {ex}");
+                await context.Response.WriteAsync($"An error occurred: {ex.Message}");
                 return new List<ClienteDTO>();
             }
         }
@@ -31,7 +31,7 @@ namespace Tools.Api.EndPoint
             catch (Exception ex)
             {
                 context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
-                await context.Response.WriteAsync($"An error occurred: {ex}");
+                await context.Response.WriteAsync($"An error occurred: {ex.Message}");
                 return new List<ClienteVentaProductoDTO>();
             }
         }
@@ -45,7 +45,7 @@ namespace Tools.Api.EndPoint
             catch (Exception ex)
             {
                 context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
-                await context.Response.WriteAsync($"An error occurred: {ex}");
+                await context.Response.WriteAsync($"An error occurred: {ex.Message}");
                 return new List<ClienteDTO>();
             }
         }
@@ -59,7 +59,7 @@ namespace Tools.Api.EndPoint
             catch (Exception ex)
             {
                 context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
-                await context.Response.WriteAsync($"An error occurred: {ex}");
+                await context.Response.WriteAsync($"An error occurred: {ex.Message}");
                 return 0;
             }
         }
@@ -79,7 +79,7 @@ namespace Tools.Api.EndPoint
             catch (Exception ex)
             {
                 context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
-                await context.Response.WriteAsync($"An error occurred: {ex}");
+                await context.Response.WriteAsync($"An error occurred: {ex.Message}");
 
             }
 
@@ -99,13 +99,13 @@ namespace Tools.Api.EndPoint
             catch (NotFoundException ex)
             {
                 context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
-                await context.Response.WriteAsync($"An error occurred: {ex}");
+                await context.Response.WriteAsync($"An error occurred: {ex.Message}");
 
             }
             catch (Exception ex)
             {
                 context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
-                await context.Response.WriteAsync($"An error occurred: {ex}");
+                await context.Response.WriteAsync($"An error occurred: {ex.Message}");
 
             }
 
@@ -134,7 +134,7 @@ namespace Tools.Api.EndPoint
             catch (Exception ex)
             {
                 context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
-                await context.Response.WriteAsync($"An error occurred: {ex}");
+                await context.Response.WriteAsync($"An error occurred: {ex.Message}");
                 return null;
             }
         }

@@ -19,4 +19,9 @@
     <ProjectReference Include="..\Tools.Shared\Tools.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Scripts\Data\Stored Procedures\" />
+    <Folder Include="Scripts\Data\Productos\" />
+  </ItemGroup>
+
 </Project>

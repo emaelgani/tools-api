@@ -1,3 +1,6 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 using Tools.Api.EndPoint;
 using Tools.Service;
 
@@ -11,6 +14,26 @@ builder.Services.AddHerramientasServiceLayerDependencyInjections(builder.Configu
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddHttpContextAccessor();
+builder.Services.AddCors(options => options.AddPolicy(name: "BackEndDanferOrigins",
+    policy =>
+    {
+        policy.WithOrigins("http://localhost:4200")
+        //policy.WithOrigins("http://localhost:83")
+        .AllowAnyMethod()
+        .AllowAnyHeader();
+    }));
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuerSigningKey = true,
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8
+                .GetBytes(builder.Configuration.GetSection("AppSettings:Token").Value!)),
+            ValidateIssuer = false,
+            ValidateAudience = false
+        };
+    });
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -23,9 +46,9 @@ app.UseSwaggerUI(config =>
         ["activated"] = false
     };
 });
-
+app.UseCors("BackEndDanferOrigins");
 app.UseHttpsRedirection();
-
+app.UseAuthentication();
 app.MapEntitiesEndPoints();
 
 app.Run();

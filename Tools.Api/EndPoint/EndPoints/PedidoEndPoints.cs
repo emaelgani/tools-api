@@ -16,7 +16,7 @@ namespace Tools.Api.EndPoint.EndPoints
             catch (Exception ex)
             {
                 context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
-                await context.Response.WriteAsync($"An error occurred: {ex}");
+                await context.Response.WriteAsync($"An error occurred: {ex.Message}");
                 return new List<PedidoWithClientDTO>();
             }
         }
@@ -30,12 +30,12 @@ namespace Tools.Api.EndPoint.EndPoints
             catch (NotFoundException ex)
             {
                 context.Response.StatusCode = (int)HttpStatusCode.NotFound;
-                await context.Response.WriteAsync($"An error occurred: {ex}");
+                await context.Response.WriteAsync($"An error occurred: {ex.Message}");
             }
             catch (Exception ex)
             {
                 context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
-                await context.Response.WriteAsync($"An error occurred: {ex}");
+                await context.Response.WriteAsync($"An error occurred: {ex.Message}");
             }
         }
 
@@ -48,12 +48,12 @@ namespace Tools.Api.EndPoint.EndPoints
             catch (NotFoundException ex)
             {
                 context.Response.StatusCode = (int)HttpStatusCode.NotFound;
-                await context.Response.WriteAsync($"An error occurred: {ex}");
+                await context.Response.WriteAsync($"An error occurred: {ex.Message}");
             }
             catch (Exception ex)
             {
                 context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
-                await context.Response.WriteAsync($"An error occurred: {ex}");
+                await context.Response.WriteAsync($"An error occurred: {ex.Message}");
             }
         }
 
@@ -66,12 +66,12 @@ namespace Tools.Api.EndPoint.EndPoints
             catch (NotFoundException ex)
             {
                 context.Response.StatusCode = (int)HttpStatusCode.NotFound;
-                await context.Response.WriteAsync($"An error occurred: {ex}");
+                await context.Response.WriteAsync($"An error occurred: {ex.Message}");
             }
             catch (Exception ex)
             {
                 context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
-                await context.Response.WriteAsync($"An error occurred: {ex}");
+                await context.Response.WriteAsync($"An error occurred: {ex.Message}");
             }
         }
     }

@@ -3,6 +3,7 @@ using Tools.Service.Interfaces;
 using Tools.Shared.DTOs.Pago;
 using Tools.Shared.DTOs.Producto;
 using Tools.Shared.DTOs.Venta;
+using Tools.Shared.Exceptions;
 
 namespace Tools.Api.EndPoint.EndPoints
 {
@@ -19,11 +20,15 @@ namespace Tools.Api.EndPoint.EndPoints
                 }
                 await ventaSrv.CreateVenta(ventaCompletaDto);
             }
+            catch (NotFoundException ex)
+            {
+                context.Response.StatusCode = (int)HttpStatusCode.NotFound;
+                await context.Response.WriteAsync($"An error occurred: {ex.Message}");
+            }
             catch (Exception ex)
             {
                 context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
-                await context.Response.WriteAsync($"An error occurred: {ex}");
-
+                await context.Response.WriteAsync($"An error occurred: {ex.Message}");
             }
         }
 
@@ -36,7 +41,7 @@ namespace Tools.Api.EndPoint.EndPoints
             catch (Exception ex)
             {
                 context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
-                await context.Response.WriteAsync($"An error occurred: {ex}");
+                await context.Response.WriteAsync($"An error occurred: {ex.Message}");
                 return new List<VentaDTO>();
             }
         }
@@ -50,7 +55,7 @@ namespace Tools.Api.EndPoint.EndPoints
             catch (Exception ex)
             {
                 context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
-                await context.Response.WriteAsync($"An error occurred: {ex}");
+                await context.Response.WriteAsync($"An error occurred: {ex.Message}");
                 return new List<VentaPorMesDTO>();
             }
         }
@@ -64,7 +69,7 @@ namespace Tools.Api.EndPoint.EndPoints
             catch (Exception ex)
             {
                 context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
-                await context.Response.WriteAsync($"An error occurred: {ex}");
+                await context.Response.WriteAsync($"An error occurred: {ex.Message}");
                 return new List<VentaProductoDTO>();
             }
         }
@@ -78,7 +83,7 @@ namespace Tools.Api.EndPoint.EndPoints
             catch (Exception ex)
             {
                 context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
-                await context.Response.WriteAsync($"An error occurred: {ex}");
+                await context.Response.WriteAsync($"An error occurred: {ex.Message}");
                 return new List<VentaPorMesDTO>();
             }
         }
@@ -92,7 +97,7 @@ namespace Tools.Api.EndPoint.EndPoints
             catch (Exception ex)
             {
                 context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
-                await context.Response.WriteAsync($"An error occurred: {ex}");
+                await context.Response.WriteAsync($"An error occurred: {ex.Message}");
                 return new List<ProductoCompradoPorClienteDTO>();
             }
         }
@@ -106,7 +111,7 @@ namespace Tools.Api.EndPoint.EndPoints
             catch (Exception ex)
             {
                 context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
-                await context.Response.WriteAsync($"An error occurred: {ex}");
+                await context.Response.WriteAsync($"An error occurred: {ex.Message}");
                 return null;
             }
         }

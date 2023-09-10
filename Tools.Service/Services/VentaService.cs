@@ -85,7 +85,7 @@ namespace Tools.Service.Services
                 catch (NotFoundException ex)
                 {
                     await transaction.RollbackAsync();
-                    throw new Exception(ex.Message);
+                    throw new NotFoundException(ex.Message);
                 }
                 catch (Exception ex)
                 {

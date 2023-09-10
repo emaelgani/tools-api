@@ -20,7 +20,7 @@ namespace Tools.Api.EndPoint.EndPoints
             catch (Exception ex)
             {
                 context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
-                await context.Response.WriteAsync($"An error occurred: {ex}");
+                await context.Response.WriteAsync($"An error occurred: {ex.Message}");
             }
 
         }
@@ -35,7 +35,7 @@ namespace Tools.Api.EndPoint.EndPoints
             catch (Exception ex)
             {
                 context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
-                await context.Response.WriteAsync($"An error occurred: {ex}");
+                await context.Response.WriteAsync($"An error occurred: {ex.Message}");
                 return new List<CompromisoDTO>();
             }
 
@@ -50,7 +50,7 @@ namespace Tools.Api.EndPoint.EndPoints
             catch (Exception ex)
             {
                 context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
-                await context.Response.WriteAsync($"An error occurred: {ex}");
+                await context.Response.WriteAsync($"An error occurred: {ex.Message}");
                 return new CompromisoDTO();
             }
         }
@@ -64,7 +64,7 @@ namespace Tools.Api.EndPoint.EndPoints
             catch (Exception ex)
             {
                 context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
-                await context.Response.WriteAsync($"An error occurred: {ex}");
+                await context.Response.WriteAsync($"An error occurred: {ex.Message}");
             }
         }
 
@@ -77,7 +77,7 @@ namespace Tools.Api.EndPoint.EndPoints
             catch (Exception ex)
             {
                 context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
-                await context.Response.WriteAsync($"An error occurred: {ex}");
+                await context.Response.WriteAsync($"An error occurred: {ex.Message}");
             }
         }
 
@@ -90,7 +90,7 @@ namespace Tools.Api.EndPoint.EndPoints
             catch (Exception ex)
             {
                 context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
-                await context.Response.WriteAsync($"An error occurred: {ex}");
+                await context.Response.WriteAsync($"An error occurred: {ex.Message}");
                 return null;
             }
         }
@@ -104,7 +104,7 @@ namespace Tools.Api.EndPoint.EndPoints
             catch (Exception ex)
             {
                 context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
-                await context.Response.WriteAsync($"An error occurred: {ex}");
+                await context.Response.WriteAsync($"An error occurred: {ex.Message}");
                 return null;
             }
         }
@@ -118,7 +118,7 @@ namespace Tools.Api.EndPoint.EndPoints
             catch (Exception ex)
             {
                 context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
-                await context.Response.WriteAsync($"An error occurred: {ex}");
+                await context.Response.WriteAsync($"An error occurred: {ex.Message}");
                 return null;
             }
         }
@@ -132,7 +132,7 @@ namespace Tools.Api.EndPoint.EndPoints
             catch (Exception ex)
             {
                 context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
-                await context.Response.WriteAsync($"An error occurred: {ex}");
+                await context.Response.WriteAsync($"An error occurred: {ex.Message}");
                 return 0;
             }
         }
@@ -146,7 +146,7 @@ namespace Tools.Api.EndPoint.EndPoints
             catch (Exception ex)
             {
                 context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
-                await context.Response.WriteAsync($"An error occurred: {ex}");
+                await context.Response.WriteAsync($"An error occurred: {ex.Message}");
                 return 0;
             }
         }
