@@ -1,4 +1,5 @@
-﻿using System.Net;
+﻿using Microsoft.AspNetCore.Mvc;
+using System.Net;
 using Tools.Service.Interfaces;
 using Tools.Shared.DTOs.Cliente;
 using Tools.Shared.Exceptions;
@@ -108,6 +109,34 @@ namespace Tools.Api.EndPoint
 
             }
 
+        }
+
+        public static async Task<IResult?> CreatePdfSalida(HttpContext context, IClienteService clienteSrv)
+        {
+            try
+            {
+                var pdfResult = await clienteSrv.CreatePdfSalida();
+
+                // Verifica si el resultado es un FileContentResult y si el contenido es un archivo PDF
+                if (pdfResult is FileContentResult fileContentResult && fileContentResult.ContentType == "application/pdf")
+                {
+                    var fileName = fileContentResult.FileDownloadName;
+                    return Results.File(fileContentResult.FileContents, contentType: "application/pdf", fileDownloadName: fileName);
+                }
+                else
+                {
+                    // Manejar otros tipos de resultados 
+                    context.Response.StatusCode = (int)HttpStatusCode.NotFound;
+                    await context.Response.WriteAsync("PDF not found.");
+                    return null;
+                }
+            }
+            catch (Exception ex)
+            {
+                context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
+                await context.Response.WriteAsync($"An error occurred: {ex}");
+                return null;
+            }
         }
 
     }

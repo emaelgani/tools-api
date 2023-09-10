@@ -1,4 +1,5 @@
-﻿using Tools.Shared.DTOs.Cliente;
+﻿using Microsoft.AspNetCore.Mvc;
+using Tools.Shared.DTOs.Cliente;
 
 namespace Tools.Service.Interfaces
 {
@@ -39,5 +40,11 @@ namespace Tools.Service.Interfaces
         /// <param name="idProducto"></param>
         /// <returns></returns>
         public Task<IList<ClienteVentaProductoDTO>> GetClientByIdProduct(int idProducto);
+        
+        /// <summary>
+        /// crea pdf con la deuda de cada cliente.
+        /// </summary>
+        /// <returns></returns>
+        public Task<IActionResult> CreatePdfSalida();
     }
 }

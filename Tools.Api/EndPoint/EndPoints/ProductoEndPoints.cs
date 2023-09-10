@@ -164,7 +164,7 @@ namespace Tools.Api.EndPoint.EndPoints
                 }
                 else
                 {
-                    // Maneja otros tipos de resultados o errores aquí si es necesario
+                    // Maneja otros tipos de resultados o errores
                     context.Response.StatusCode = (int)HttpStatusCode.NotFound;
                     await context.Response.WriteAsync("PDF not found.");
                     return null;

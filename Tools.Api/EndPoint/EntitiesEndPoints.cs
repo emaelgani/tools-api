@@ -23,6 +23,7 @@ namespace Tools.Api.EndPoint
             app.MapGet("/api/Cliente/TotalDeuda", ClienteEndPoints.GetTotalDebt);
             app.MapGet("/api/Cliente/CuatroConMasDeuda", ClienteEndPoints.GetFourMoreDebt);
             app.MapGet("/api/Cliente/ClientesCompraronProducto/{idProducto}", ClienteEndPoints.GetClientesVentaByProducto);
+            app.MapGet("/api/Finanzas/DownloadGuiaSalida", ClienteEndPoints.CreatePdfSalida);
             //POST
             app.MapPost("/api/Cliente", ClienteEndPoints.Add);
             //PUT
