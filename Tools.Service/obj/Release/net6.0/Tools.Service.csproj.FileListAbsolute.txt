@@ -1,0 +1,17 @@
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Service\bin\Release\net6.0\Tools.Service.deps.json
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Service\bin\Release\net6.0\Tools.Service.dll
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Service\bin\Release\net6.0\Tools.Service.pdb
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Service\bin\Release\net6.0\Tools.Data.dll
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Service\bin\Release\net6.0\Tools.Shared.dll
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Service\bin\Release\net6.0\Tools.Data.pdb
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Service\bin\Release\net6.0\Tools.Shared.pdb
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Service\obj\Release\net6.0\Tools.Service.csproj.AssemblyReference.cache
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Service\obj\Release\net6.0\Tools.Service.GeneratedMSBuildEditorConfig.editorconfig
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Service\obj\Release\net6.0\Tools.Service.AssemblyInfoInputs.cache
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Service\obj\Release\net6.0\Tools.Service.AssemblyInfo.cs
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Service\obj\Release\net6.0\Tools.Service.csproj.CoreCompileInputs.cache
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Service\obj\Release\net6.0\Tools.Service.csproj.CopyComplete
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Service\obj\Release\net6.0\Tools.Service.dll
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Service\obj\Release\net6.0\refint\Tools.Service.dll
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Service\obj\Release\net6.0\Tools.Service.pdb
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Service\obj\Release\net6.0\ref\Tools.Service.dll

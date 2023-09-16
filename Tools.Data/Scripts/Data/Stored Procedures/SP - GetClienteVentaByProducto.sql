@@ -10,4 +10,3 @@ BEGIN
    GROUP BY c.IdCliente, c.Nombre, c.Direccion, c.Telefono;
 END$$
 DELIMITER ;
-SELECT * FROM maurodb.venta;
