@@ -10,5 +10,6 @@ namespace Tools.Service.Interfaces
         public Task<PagosYVentasPorMesDTO> GetPagosYVentasPorMes();
         public Task<decimal> GetLiquidezEfectivo();
         public Task<decimal> GetLiquidezDigital();
+        Task DeletePago(int idPago);
     }
 }

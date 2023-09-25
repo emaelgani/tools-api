@@ -14,5 +14,6 @@ namespace Tools.Service.Interfaces
         Task<IList<ProductoCompradoPorClienteDTO>> GetQuinceProductosMasCompradosPorClientes(string fechaInicio, string fechaFin);
         Task<CobranzasYVentasDTO> GetCobranzaYVenta(string fechaInicio, string fechaFin);
         Task CreateVenta(VentaCompletaDTO ventaCompleta);
+        Task DeleteVenta(int idVenta);
     }
 }

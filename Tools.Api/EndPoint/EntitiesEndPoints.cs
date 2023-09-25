@@ -80,6 +80,9 @@ namespace Tools.Api.EndPoint
             app.MapPost("/api/Pago", PagoEndPoints.Add);
             app.MapGet("/api/Pago/LiquidezDigital", PagoEndPoints.GetLiquidezDigital);
             app.MapGet("/api/Pago/LiquidezEfectivo", PagoEndPoints.GetLiquidezEfectivo);
+
+            //DELETE
+            app.MapDelete("/api/Pago", PagoEndPoints.DeletePago);
             #endregion
 
             #region Venta
@@ -87,11 +90,13 @@ namespace Tools.Api.EndPoint
             app.MapGet("/api/Venta", VentaEndPoints.GetVentas);
             app.MapGet("/CobranzasYVentas", VentaEndPoints.GetCobranzaYVenta);
             app.MapGet("/VentasPorMes", VentaEndPoints.GetVentasPorMes);
-            app.MapGet("/api/Ventas/{idVenta}/productos", VentaEndPoints.GetVentaProductos);
+            app.MapGet("/api/Venta/{idVenta}/productos", VentaEndPoints.GetVentaProductos);
             app.MapGet("/VentasPorMesByIdProducto", VentaEndPoints.GetVentasPorMesByIdProducto);
             app.MapGet("/QuinceProductosMasVendidosPorCliente", VentaEndPoints.GetQuinceProductosMasCompradosPorClientes);
             //POST
             app.MapPost("/api/Venta", VentaEndPoints.Register);
+            //DELETE
+            app.MapDelete("/api/Venta", VentaEndPoints.DeleteVenta);
             #endregion
 
             #region Compromiso

@@ -191,7 +191,10 @@ namespace Tools.Service.Services
                     throw new NotFoundException("Client not found.");
                 }
 
+                clienteDto.Deuda = existingCliente.Deuda;
+                // Mapear todas las propiedades excepto 'Deuda'
                 _mapper.Map(clienteDto, existingCliente);
+
 
                 _clienteRepo.Update(existingCliente);
                 await _clienteRepo.CommitAsync();

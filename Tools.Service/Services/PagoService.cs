@@ -47,6 +47,25 @@ namespace Tools.Service.Services
             }
         }
 
+        public async Task DeletePago(int idPago)
+        {
+            try
+            {
+                var pago = await _pagoRepo.FindByIdAsync(idPago);
+                var cliente = await _clienteRepo.FindByIdAsync(pago!.IdCliente);
+                cliente!.Deuda += pago.TotalPago;
+
+                await _pagoRepo.RemoveByIdAsync(idPago);
+                await _pagoRepo.CommitAsync();
+                await _clienteRepo.CommitAsync();
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception("An error occurred deleting pago.", ex);
+            }
+        }
+
         public async Task<IList<PagoListDTO>> GetAllAsync()
         {
             try

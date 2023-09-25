@@ -96,5 +96,18 @@ namespace Tools.Api.EndPoint.EndPoints
                 return 0;
             }
         }
+
+        public static async Task DeletePago(HttpContext context, IPagoService pagoSrv, int id)
+        {
+            try
+            {
+                await pagoSrv.DeletePago(id);
+            }
+            catch (Exception ex)
+            {
+                context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
+                await context.Response.WriteAsync($"An error occurred: {ex.Message}");
+            }
+        }
     }
 }

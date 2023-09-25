@@ -115,5 +115,18 @@ namespace Tools.Api.EndPoint.EndPoints
                 return null;
             }
         }
+
+        public static async Task DeleteVenta(HttpContext context, IVentaService ventaService, int id)
+        {
+            try
+            {
+                await ventaService.DeleteVenta(id);
+            }
+            catch (Exception ex)
+            {
+                context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
+                await context.Response.WriteAsync($"An error occurred: {ex.Message}");
+            }
+        }
     }
 }

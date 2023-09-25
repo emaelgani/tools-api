@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using Tools.Data.Entities;
 using Tools.Data.Interfaces;
 using Tools.Service.Interfaces;
@@ -92,6 +93,36 @@ namespace Tools.Service.Services
                     await transaction.RollbackAsync();
                     throw new Exception("Error al crear la venta", ex);
                 }
+            }
+        }
+
+        public async Task DeleteVenta(int idVenta)
+        {
+            try
+            {
+                var venta = await _ventaRepo.FindByIdAsync(idVenta);
+                var ventaProductos =  await _ventaProducRepo.FindByCondition(vp => vp.IdVenta == idVenta).ToListAsync();
+                var cliente = await _clienteRepo.FindByIdAsync(venta!.IdCliente);
+                cliente!.Deuda -= venta.TotalVenta;
+
+                foreach (var ventaProducto in ventaProductos)
+                {
+                    var prod = await _productoRepo.FindByIdAsync(ventaProducto.IdProducto);
+                    prod!.Stock += ventaProducto.Cantidad;
+                    
+                }
+
+                _ventaProducRepo.RemoveRange(ventaProductos);
+                await _ventaProducRepo.CommitAsync();
+                await _ventaRepo.RemoveByIdAsync(idVenta);
+                await _productoRepo.CommitAsync();
+                await _ventaRepo.CommitAsync();
+                _clienteRepo.Update(cliente);
+                await _clienteRepo.CommitAsync();
+            }
+            catch (Exception)
+            {
+                throw new Exception("Error al eliminar la venta.");
             }
         }
 

@@ -18,7 +18,9 @@ builder.Services.AddCors(options => options.AddPolicy(name: "BackEndDanferOrigin
     policy =>
     {
         policy.WithOrigins("http://localhost:4200")
-        //policy.WithOrigins("http://localhost:83")
+        .AllowAnyMethod()
+        .AllowAnyHeader();
+        policy.WithOrigins("http://localhost:83")
         .AllowAnyMethod()
         .AllowAnyHeader();
     }));
