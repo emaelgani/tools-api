@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "pY6WoOv3oxNyiG3ZRYtH8zTXd0gh8tH6OTtag/2oCaEGbdGx1eD0C3qLDSLhMX9KLxIv8ao1ChZYovK+s5F1VQ==",
+  "dgSpecHash": "AO0XO2fU7/QHojqlvGGKtLeTS1GRkTA+SB4y0rIdnAVcZXjjcTCvIu0GkARGNWkDLJxnvHXxcyeHnGnjL2Wprg==",
   "success": true,
   "projectFilePath": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Api\\Tools.Api.csproj",
   "expectedPackageFiles": [
@@ -131,7 +131,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "El paquete \"PDFsharp 1.50.5147\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net6.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "message": "Package 'PDFsharp 1.50.5147' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
       "libraryId": "PDFsharp",
       "targetGraphs": [
         "net6.0"

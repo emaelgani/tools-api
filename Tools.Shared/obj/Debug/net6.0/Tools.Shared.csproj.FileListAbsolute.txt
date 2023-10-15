@@ -1,7 +1,6 @@
 E:\Proyectos\mauro-ventas\Tools.Api\Tools.Shared\bin\Debug\net6.0\Tools.Shared.deps.json
 E:\Proyectos\mauro-ventas\Tools.Api\Tools.Shared\bin\Debug\net6.0\Tools.Shared.dll
 E:\Proyectos\mauro-ventas\Tools.Api\Tools.Shared\bin\Debug\net6.0\Tools.Shared.pdb
-E:\Proyectos\mauro-ventas\Tools.Api\Tools.Shared\obj\Debug\net6.0\Tools.Shared.csproj.AssemblyReference.cache
 E:\Proyectos\mauro-ventas\Tools.Api\Tools.Shared\obj\Debug\net6.0\Tools.Shared.GeneratedMSBuildEditorConfig.editorconfig
 E:\Proyectos\mauro-ventas\Tools.Api\Tools.Shared\obj\Debug\net6.0\Tools.Shared.AssemblyInfoInputs.cache
 E:\Proyectos\mauro-ventas\Tools.Api\Tools.Shared\obj\Debug\net6.0\Tools.Shared.AssemblyInfo.cs
