@@ -8,16 +8,55 @@ namespace Tools.Api.EndPoint
 {
     internal static class ClienteEndPoints
     {
-        public static async Task<IList<ClienteDTO>> GetAllClientesAsync(HttpContext context, IClienteService clienteSrv)
+        public static async Task<IList<ClienteDTO>> GetAllClientesAsync(HttpContext context, IClienteService clienteSrv, IUserService userSrv)
         {
             try
             {
-                return await clienteSrv.GetAllAsync();
+                // Obtener el token desde el header "Authorization"
+                var authorizationHeader = context.Request.Headers["Authorization"].FirstOrDefault();
+
+                // Log para verificar si el header se obtuvo correctamente
+                Console.WriteLine("Authorization Header: " + authorizationHeader);
+
+                // Verificar si el token fue enviado y si comienza con "Bearer "
+                if (string.IsNullOrEmpty(authorizationHeader) || !authorizationHeader.StartsWith("Bearer "))
+                {
+                    context.Response.StatusCode = (int)HttpStatusCode.Unauthorized;
+                    await context.Response.WriteAsync("Token not provided or invalid.");
+
+                    // Completar explícitamente la respuesta para asegurar que se envía el código de estado
+                    await context.Response.CompleteAsync();
+
+                    return new List<ClienteDTO>();
+                }
+
+                // Extraer el token JWT sin el prefijo "Bearer "
+                var token = authorizationHeader.Substring("Bearer ".Length);
+
+                // Validar el token usando el servicio de usuario
+                var user = await userSrv.CheckToken();
+
+                if (user == null)
+                {
+                    context.Response.StatusCode = (int)HttpStatusCode.Unauthorized;
+                    await context.Response.WriteAsync("Invalid or expired token.");
+
+                    await context.Response.CompleteAsync();
+
+                    return new List<ClienteDTO>();
+                }
+
+                // Si el token es válido, proceder con la lógica de negocio
+                var clientes = await clienteSrv.GetAllAsync();
+                return clientes;
             }
             catch (Exception ex)
             {
                 context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
                 await context.Response.WriteAsync($"An error occurred: {ex.Message}");
+
+                await context.Response.CompleteAsync();
+
                 return new List<ClienteDTO>();
             }
         }
