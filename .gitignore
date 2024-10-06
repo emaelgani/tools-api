@@ -2,4 +2,29 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
+# Ignore Visual Studio temporary files, build results, and
+# user-specific files
+.vs/
 *.vsidx
+*.user
+*.suo
+
+# Ignore build outputs
+bin/
+obj/
+
+# Ignore debug/release builds
+*.pdb
+*.log
+*.cache
+*.ide
+
+# Ignore Visual Studio Code settings
+.vscode/
+
+# Ignore Rider files
+.idea/
+.idea_modules/
+
+# Ignore packages
+packages/
