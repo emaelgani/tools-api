@@ -20,6 +20,8 @@ obj/
 *.log
 *.cache
 *.ide
+*.dll
+*.exe
 
 # Ignore Visual Studio Code settings
 .vscode/
@@ -31,3 +33,5 @@ obj/
 # Ignore packages
 packages/
 /Tools.Api/bin/Debug/net6.0/Tools.Api.dll
+/Tools.Api/bin/Debug/net6.0/Tools.Data.dll
+/Tools.Api/bin/Debug/net6.0/Tools.Service.dll
