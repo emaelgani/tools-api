@@ -12,6 +12,8 @@
 # Ignore build outputs
 bin/
 obj/
+**/bin/
+**/obj/
 
 # Ignore debug/release builds
 *.pdb
@@ -28,3 +30,4 @@ obj/
 
 # Ignore packages
 packages/
+/Tools.Api/bin/Debug/net6.0/Tools.Api.dll
