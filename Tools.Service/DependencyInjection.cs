@@ -4,6 +4,10 @@ using Tools.Service.Mappings.Configuration;
 using Tools.Service.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Tools.Data.Repositories;
+using Tools.Data.Interfaces;
+using Microsoft.Extensions.Caching.Memory;
+using PdfSharp.Charting;
 
 
 namespace Tools.Service
@@ -20,6 +24,15 @@ namespace Tools.Service
             service.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             /* Automapper Mappings */
             service.AddSingleton(ProfilesConfiguration.MapProfiles());
+
+            service.AddScoped<IClienteRepository, ClienteRepository>();
+
+            // Registrar el CachedClienteRepository manualmente
+            service.AddScoped<IClienteRepository>(serviceProvider =>
+                new CachedClienteRepository(
+                    serviceProvider.GetRequiredService<ClienteRepository>(),
+                    serviceProvider.GetRequiredService<IMemoryCache>()
+                ));
 
             // Add services.
             service.AddScoped<IClienteService, ClienteService>();

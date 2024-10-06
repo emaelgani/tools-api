@@ -12,11 +12,16 @@ namespace Tools.Data
         public static IServiceCollection AddHerramientaDataLayerDependencyInjections(this IServiceCollection service, IConfiguration configuration)
         {
             // Add MySql Connection.
-            service.AddDbContext<HerramientasDbContext>(options => options.UseMySql(connectionString: configuration.GetConnectionString("MySqlDataConnection") ?? "", ServerVersion.Parse("1.0.0.1")));
+            service.AddDbContext<HerramientasDbContext>(options =>
+                options.UseMySql(connectionString: configuration.GetConnectionString("MySqlDataConnection") ?? "",
+                ServerVersion.Parse("1.0.0.1")));
 
-            // Add Repositories.
+            // Registrar el ClienteRepository primero
+            service.AddScoped<ClienteRepository>();
+
+
+            // Agregar otros repositorios
             service.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
-            service.AddScoped<IClienteRepository, ClienteRepository>();
             service.AddScoped<IUserRepository, UserRepository>();
             service.AddScoped<IProveedorRepository, ProveedorRepository>();
             service.AddScoped<IProductoRepository, ProductoRepository>();
@@ -25,6 +30,7 @@ namespace Tools.Data
             service.AddScoped<IVentaRepository, VentaRepository>();
             service.AddScoped<IVentaProductoRepository, VentaProductoRepository>();
             service.AddScoped<ICompromisoRepository, CompromisoRepository>();
+
             return service;
         }
     }

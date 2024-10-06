@@ -9,7 +9,8 @@ E:\Proyectos\mauro-ventas\Tools.Api\Tools.Data\obj\Debug\net6.0\Tools.Data.Gener
 E:\Proyectos\mauro-ventas\Tools.Api\Tools.Data\obj\Debug\net6.0\Tools.Data.AssemblyInfoInputs.cache
 E:\Proyectos\mauro-ventas\Tools.Api\Tools.Data\obj\Debug\net6.0\Tools.Data.AssemblyInfo.cs
 E:\Proyectos\mauro-ventas\Tools.Api\Tools.Data\obj\Debug\net6.0\Tools.Data.csproj.CoreCompileInputs.cache
-E:\Proyectos\mauro-ventas\Tools.Api\Tools.Data\obj\Debug\net6.0\Tools.Data.csproj.CopyComplete
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Data\obj\Debug\net6.0\Tools.Data.sourcelink.json
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Data\obj\Debug\net6.0\Tools.Data.csproj.Up2Date
 E:\Proyectos\mauro-ventas\Tools.Api\Tools.Data\obj\Debug\net6.0\Tools.Data.dll
 E:\Proyectos\mauro-ventas\Tools.Api\Tools.Data\obj\Debug\net6.0\refint\Tools.Data.dll
 E:\Proyectos\mauro-ventas\Tools.Api\Tools.Data\obj\Debug\net6.0\Tools.Data.pdb

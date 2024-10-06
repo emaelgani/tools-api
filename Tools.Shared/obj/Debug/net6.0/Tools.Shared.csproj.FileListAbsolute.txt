@@ -5,6 +5,7 @@ E:\Proyectos\mauro-ventas\Tools.Api\Tools.Shared\obj\Debug\net6.0\Tools.Shared.G
 E:\Proyectos\mauro-ventas\Tools.Api\Tools.Shared\obj\Debug\net6.0\Tools.Shared.AssemblyInfoInputs.cache
 E:\Proyectos\mauro-ventas\Tools.Api\Tools.Shared\obj\Debug\net6.0\Tools.Shared.AssemblyInfo.cs
 E:\Proyectos\mauro-ventas\Tools.Api\Tools.Shared\obj\Debug\net6.0\Tools.Shared.csproj.CoreCompileInputs.cache
+E:\Proyectos\mauro-ventas\Tools.Api\Tools.Shared\obj\Debug\net6.0\Tools.Shared.sourcelink.json
 E:\Proyectos\mauro-ventas\Tools.Api\Tools.Shared\obj\Debug\net6.0\Tools.Shared.dll
 E:\Proyectos\mauro-ventas\Tools.Api\Tools.Shared\obj\Debug\net6.0\refint\Tools.Shared.dll
 E:\Proyectos\mauro-ventas\Tools.Api\Tools.Shared\obj\Debug\net6.0\Tools.Shared.pdb
