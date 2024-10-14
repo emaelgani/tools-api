@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{651F6727-38D3-4C87-8347-E936826DEE1F}|Tools.Service\\Tools.Service.csproj|e:\\proyectos\\mauro-ventas\\tools.api\\tools.service\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{651F6727-38D3-4C87-8347-E936826DEE1F}|Tools.Service\\Tools.Service.csproj|solutionrelative:tools.service\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C95B5B6C-D64F-4555-A671-8DD1FDE9C3AE}|Tools.Data\\Tools.Data.csproj|e:\\proyectos\\mauro-ventas\\tools.api\\tools.data\\repositories\\cachedproveedorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C95B5B6C-D64F-4555-A671-8DD1FDE9C3AE}|Tools.Data\\Tools.Data.csproj|solutionrelative:tools.data\\repositories\\cachedproveedorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F2C2338-D362-4E0B-84FD-E16ECE8F5BF9}|Tools.Api\\Tools.Api.csproj|e:\\proyectos\\mauro-ventas\\tools.api\\tools.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F2C2338-D362-4E0B-84FD-E16ECE8F5BF9}|Tools.Api\\Tools.Api.csproj|solutionrelative:tools.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{651F6727-38D3-4C87-8347-E936826DEE1F}|Tools.Service\\Tools.Service.csproj|e:\\proyectos\\mauro-ventas\\tools.api\\tools.service\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{651F6727-38D3-4C87-8347-E936826DEE1F}|Tools.Service\\Tools.Service.csproj|solutionrelative:tools.service\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C95B5B6C-D64F-4555-A671-8DD1FDE9C3AE}|Tools.Data\\Tools.Data.csproj|e:\\proyectos\\mauro-ventas\\tools.api\\tools.data\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,16 +19,48 @@
       "RelativeMoniker": "D:0:0:{C95B5B6C-D64F-4555-A671-8DD1FDE9C3AE}|Tools.Data\\Tools.Data.csproj|solutionrelative:tools.data\\repositories\\cachedclienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C95B5B6C-D64F-4555-A671-8DD1FDE9C3AE}|Tools.Data\\Tools.Data.csproj|e:\\proyectos\\mauro-ventas\\tools.api\\tools.data\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C95B5B6C-D64F-4555-A671-8DD1FDE9C3AE}|Tools.Data\\Tools.Data.csproj|solutionrelative:tools.data\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{651F6727-38D3-4C87-8347-E936826DEE1F}|Tools.Service\\Tools.Service.csproj|e:\\proyectos\\mauro-ventas\\tools.api\\tools.service\\services\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{651F6727-38D3-4C87-8347-E936826DEE1F}|Tools.Service\\Tools.Service.csproj|solutionrelative:tools.service\\services\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{4F2C2338-D362-4E0B-84FD-E16ECE8F5BF9}|Tools.Api\\Tools.Api.csproj|e:\\proyectos\\mauro-ventas\\tools.api\\tools.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F2C2338-D362-4E0B-84FD-E16ECE8F5BF9}|Tools.Api\\Tools.Api.csproj|solutionrelative:tools.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{651F6727-38D3-4C87-8347-E936826DEE1F}|Tools.Service\\Tools.Service.csproj|e:\\proyectos\\mauro-ventas\\tools.api\\tools.service\\interfaces\\iclienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{651F6727-38D3-4C87-8347-E936826DEE1F}|Tools.Service\\Tools.Service.csproj|solutionrelative:tools.service\\interfaces\\iclienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C95B5B6C-D64F-4555-A671-8DD1FDE9C3AE}|Tools.Data\\Tools.Data.csproj|e:\\proyectos\\mauro-ventas\\tools.api\\tools.data\\repositories\\proveedorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C95B5B6C-D64F-4555-A671-8DD1FDE9C3AE}|Tools.Data\\Tools.Data.csproj|solutionrelative:tools.data\\repositories\\proveedorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C95B5B6C-D64F-4555-A671-8DD1FDE9C3AE}|Tools.Data\\Tools.Data.csproj|e:\\proyectos\\mauro-ventas\\tools.api\\tools.data\\repositories\\clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C95B5B6C-D64F-4555-A671-8DD1FDE9C3AE}|Tools.Data\\Tools.Data.csproj|solutionrelative:tools.data\\repositories\\clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C95B5B6C-D64F-4555-A671-8DD1FDE9C3AE}|Tools.Data\\Tools.Data.csproj|e:\\proyectos\\mauro-ventas\\tools.api\\tools.data\\interfaces\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C95B5B6C-D64F-4555-A671-8DD1FDE9C3AE}|Tools.Data\\Tools.Data.csproj|solutionrelative:tools.data\\interfaces\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{651F6727-38D3-4C87-8347-E936826DEE1F}|Tools.Service\\Tools.Service.csproj|e:\\proyectos\\mauro-ventas\\tools.api\\tools.service\\services\\pagoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{651F6727-38D3-4C87-8347-E936826DEE1F}|Tools.Service\\Tools.Service.csproj|solutionrelative:tools.service\\services\\pagoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F2C2338-D362-4E0B-84FD-E16ECE8F5BF9}|Tools.Api\\Tools.Api.csproj|e:\\proyectos\\mauro-ventas\\tools.api\\tools.api\\endpoint\\entitiesendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F2C2338-D362-4E0B-84FD-E16ECE8F5BF9}|Tools.Api\\Tools.Api.csproj|solutionrelative:tools.api\\endpoint\\entitiesendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C95B5B6C-D64F-4555-A671-8DD1FDE9C3AE}|Tools.Data\\Tools.Data.csproj|e:\\proyectos\\mauro-ventas\\tools.api\\tools.data\\repositories\\pagorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C95B5B6C-D64F-4555-A671-8DD1FDE9C3AE}|Tools.Data\\Tools.Data.csproj|solutionrelative:tools.data\\repositories\\pagorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A56BD999-B935-4595-B3D2-0DDB33DF4302}|Tools.Shared\\Tools.Shared.csproj|e:\\proyectos\\mauro-ventas\\tools.api\\tools.shared\\dtos\\cliente\\clientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A56BD999-B935-4595-B3D2-0DDB33DF4302}|Tools.Shared\\Tools.Shared.csproj|solutionrelative:tools.shared\\dtos\\cliente\\clientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F2C2338-D362-4E0B-84FD-E16ECE8F5BF9}|Tools.Api\\Tools.Api.csproj|e:\\proyectos\\mauro-ventas\\tools.api\\tools.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4F2C2338-D362-4E0B-84FD-E16ECE8F5BF9}|Tools.Api\\Tools.Api.csproj|solutionrelative:tools.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C95B5B6C-D64F-4555-A671-8DD1FDE9C3AE}|Tools.Data\\Tools.Data.csproj|e:\\proyectos\\mauro-ventas\\tools.api\\tools.data\\repositories\\pedidorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,24 +75,8 @@
       "RelativeMoniker": "D:0:0:{A56BD999-B935-4595-B3D2-0DDB33DF4302}|Tools.Shared\\Tools.Shared.csproj|solutionrelative:tools.shared\\dtos\\compromiso\\compromisodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A56BD999-B935-4595-B3D2-0DDB33DF4302}|Tools.Shared\\Tools.Shared.csproj|e:\\proyectos\\mauro-ventas\\tools.api\\tools.shared\\dtos\\cliente\\clientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A56BD999-B935-4595-B3D2-0DDB33DF4302}|Tools.Shared\\Tools.Shared.csproj|solutionrelative:tools.shared\\dtos\\cliente\\clientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C95B5B6C-D64F-4555-A671-8DD1FDE9C3AE}|Tools.Data\\Tools.Data.csproj|e:\\proyectos\\mauro-ventas\\tools.api\\tools.data\\entities\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C95B5B6C-D64F-4555-A671-8DD1FDE9C3AE}|Tools.Data\\Tools.Data.csproj|solutionrelative:tools.data\\entities\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{651F6727-38D3-4C87-8347-E936826DEE1F}|Tools.Service\\Tools.Service.csproj|e:\\proyectos\\mauro-ventas\\tools.api\\tools.service\\interfaces\\iclienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{651F6727-38D3-4C87-8347-E936826DEE1F}|Tools.Service\\Tools.Service.csproj|solutionrelative:tools.service\\interfaces\\iclienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F2C2338-D362-4E0B-84FD-E16ECE8F5BF9}|Tools.Api\\Tools.Api.csproj|e:\\proyectos\\mauro-ventas\\tools.api\\tools.api\\endpoint\\endpoints\\clienteendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F2C2338-D362-4E0B-84FD-E16ECE8F5BF9}|Tools.Api\\Tools.Api.csproj|solutionrelative:tools.api\\endpoint\\endpoints\\clienteendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F2C2338-D362-4E0B-84FD-E16ECE8F5BF9}|Tools.Api\\Tools.Api.csproj|e:\\proyectos\\mauro-ventas\\tools.api\\tools.api\\endpoint\\entitiesendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F2C2338-D362-4E0B-84FD-E16ECE8F5BF9}|Tools.Api\\Tools.Api.csproj|solutionrelative:tools.api\\endpoint\\entitiesendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,7 +86,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 153,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -97,6 +113,39 @@
               "Name": "ST:1972725675:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CachedProveedorRepository.cs",
+              "DocumentMoniker": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Data\\Repositories\\CachedProveedorRepository.cs",
+              "RelativeDocumentMoniker": "Tools.Data\\Repositories\\CachedProveedorRepository.cs",
+              "ToolTip": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Data\\Repositories\\CachedProveedorRepository.cs",
+              "RelativeToolTip": "Tools.Data\\Repositories\\CachedProveedorRepository.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAUwD4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T20:59:08.475Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "CachedClienteRepository.cs",
@@ -104,35 +153,9 @@
               "RelativeDocumentMoniker": "Tools.Data\\Repositories\\CachedClienteRepository.cs",
               "ToolTip": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Data\\Repositories\\CachedClienteRepository.cs",
               "RelativeToolTip": "Tools.Data\\Repositories\\CachedClienteRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAE8AAAAAAAAAAAA3wGQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-06T16:53:06.513Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Api\\Program.cs",
-              "RelativeDocumentMoniker": "Tools.Api\\Program.cs",
-              "ToolTip": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Api\\Program.cs",
-              "RelativeToolTip": "Tools.Api\\Program.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAcwCMAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T23:57:32.366Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Service\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "Tools.Service\\DependencyInjection.cs",
-              "ToolTip": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Service\\DependencyInjection.cs",
-              "RelativeToolTip": "Tools.Service\\DependencyInjection.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAIwCAAAABMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T23:59:35.112Z",
               "EditorCaption": ""
             },
             {
@@ -143,40 +166,169 @@
               "RelativeDocumentMoniker": "Tools.Data\\DependencyInjection.cs",
               "ToolTip": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Data\\DependencyInjection.cs",
               "RelativeToolTip": "Tools.Data\\DependencyInjection.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAwwCQAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAwwB0AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-06T01:19:12.021Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GenericRepository.cs",
-              "DocumentMoniker": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Data\\Repositories\\GenericRepository.cs",
-              "RelativeDocumentMoniker": "Tools.Data\\Repositories\\GenericRepository.cs",
-              "ToolTip": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Data\\Repositories\\GenericRepository.cs",
-              "RelativeToolTip": "Tools.Data\\Repositories\\GenericRepository.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBcAAAAxAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Service\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "Tools.Service\\DependencyInjection.cs",
+              "ToolTip": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Service\\DependencyInjection.cs",
+              "RelativeToolTip": "Tools.Service\\DependencyInjection.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAUwDYAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T01:19:05.447Z",
+              "WhenOpened": "2024-10-05T23:59:35.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ClienteService.cs",
+              "DocumentMoniker": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Service\\Services\\ClienteService.cs",
+              "RelativeDocumentMoniker": "Tools.Service\\Services\\ClienteService.cs",
+              "ToolTip": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Service\\Services\\ClienteService.cs",
+              "RelativeToolTip": "Tools.Service\\Services\\ClienteService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T23:58:29.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Api\\Program.cs",
+              "RelativeDocumentMoniker": "Tools.Api\\Program.cs",
+              "ToolTip": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Api\\Program.cs",
+              "RelativeToolTip": "Tools.Api\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T23:57:32.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EntitiesEndPoints.cs",
+              "DocumentMoniker": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Api\\EndPoint\\EntitiesEndPoints.cs",
+              "RelativeDocumentMoniker": "Tools.Api\\EndPoint\\EntitiesEndPoints.cs",
+              "ToolTip": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Api\\EndPoint\\EntitiesEndPoints.cs",
+              "RelativeToolTip": "Tools.Api\\EndPoint\\EntitiesEndPoints.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA4wBUAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T23:25:58.337Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "IClienteService.cs",
+              "DocumentMoniker": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Service\\Interfaces\\IClienteService.cs",
+              "RelativeDocumentMoniker": "Tools.Service\\Interfaces\\IClienteService.cs",
+              "ToolTip": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Service\\Interfaces\\IClienteService.cs",
+              "RelativeToolTip": "Tools.Service\\Interfaces\\IClienteService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T23:58:17.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProveedorRepository.cs",
+              "DocumentMoniker": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Data\\Repositories\\ProveedorRepository.cs",
+              "RelativeDocumentMoniker": "Tools.Data\\Repositories\\ProveedorRepository.cs",
+              "ToolTip": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Data\\Repositories\\ProveedorRepository.cs",
+              "RelativeToolTip": "Tools.Data\\Repositories\\ProveedorRepository.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T20:48:26.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ClienteRepository.cs",
+              "DocumentMoniker": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Data\\Repositories\\ClienteRepository.cs",
+              "RelativeDocumentMoniker": "Tools.Data\\Repositories\\ClienteRepository.cs",
+              "ToolTip": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Data\\Repositories\\ClienteRepository.cs",
+              "RelativeToolTip": "Tools.Data\\Repositories\\ClienteRepository.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowAUAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T01:32:54.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "IGenericRepository.cs",
               "DocumentMoniker": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Data\\Interfaces\\IGenericRepository.cs",
               "RelativeDocumentMoniker": "Tools.Data\\Interfaces\\IGenericRepository.cs",
               "ToolTip": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Data\\Interfaces\\IGenericRepository.cs",
               "RelativeToolTip": "Tools.Data\\Interfaces\\IGenericRepository.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAYwFsAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAjwCAAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-06T00:15:36.899Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "Tools.Api\\appsettings.json",
+              "ToolTip": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Api\\appsettings.json",
+              "RelativeToolTip": "Tools.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-06T21:31:52.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PagoService.cs",
+              "DocumentMoniker": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Service\\Services\\PagoService.cs",
+              "RelativeDocumentMoniker": "Tools.Service\\Services\\PagoService.cs",
+              "ToolTip": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Service\\Services\\PagoService.cs",
+              "RelativeToolTip": "Tools.Service\\Services\\PagoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T01:37:00.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PagoRepository.cs",
+              "DocumentMoniker": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Data\\Repositories\\PagoRepository.cs",
+              "RelativeDocumentMoniker": "Tools.Data\\Repositories\\PagoRepository.cs",
+              "ToolTip": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Data\\Repositories\\PagoRepository.cs",
+              "RelativeToolTip": "Tools.Data\\Repositories\\PagoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T01:36:08.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ClienteDTO.cs",
+              "DocumentMoniker": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Shared\\DTOs\\Cliente\\ClienteDTO.cs",
+              "RelativeDocumentMoniker": "Tools.Shared\\DTOs\\Cliente\\ClienteDTO.cs",
+              "ToolTip": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Shared\\DTOs\\Cliente\\ClienteDTO.cs",
+              "RelativeToolTip": "Tools.Shared\\DTOs\\Cliente\\ClienteDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T01:25:57.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "PedidoRepository.cs",
               "DocumentMoniker": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Data\\Repositories\\PedidoRepository.cs",
               "RelativeDocumentMoniker": "Tools.Data\\Repositories\\PedidoRepository.cs",
@@ -184,25 +336,11 @@
               "RelativeToolTip": "Tools.Data\\Repositories\\PedidoRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T02:01:33.922Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-06T02:01:33.922Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ClienteService.cs",
-              "DocumentMoniker": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Service\\Services\\ClienteService.cs",
-              "RelativeDocumentMoniker": "Tools.Service\\Services\\ClienteService.cs",
-              "ToolTip": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Service\\Services\\ClienteService.cs",
-              "RelativeToolTip": "Tools.Service\\Services\\ClienteService.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAAwIcAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T23:58:29.814Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 16,
               "Title": "NotFoundException.cs",
               "DocumentMoniker": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Shared\\Exceptions\\NotFoundException.cs",
               "RelativeDocumentMoniker": "Tools.Shared\\Exceptions\\NotFoundException.cs",
@@ -210,12 +348,11 @@
               "RelativeToolTip": "Tools.Shared\\Exceptions\\NotFoundException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T01:28:41.147Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-06T01:28:41.147Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 17,
               "Title": "CompromisoDTO.cs",
               "DocumentMoniker": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Shared\\DTOs\\Compromiso\\CompromisoDTO.cs",
               "RelativeDocumentMoniker": "Tools.Shared\\DTOs\\Compromiso\\CompromisoDTO.cs",
@@ -223,25 +360,11 @@
               "RelativeToolTip": "Tools.Shared\\DTOs\\Compromiso\\CompromisoDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T01:28:31.855Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-06T01:28:31.855Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ClienteDTO.cs",
-              "DocumentMoniker": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Shared\\DTOs\\Cliente\\ClienteDTO.cs",
-              "RelativeDocumentMoniker": "Tools.Shared\\DTOs\\Cliente\\ClienteDTO.cs",
-              "ToolTip": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Shared\\DTOs\\Cliente\\ClienteDTO.cs",
-              "RelativeToolTip": "Tools.Shared\\DTOs\\Cliente\\ClienteDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T01:25:57.905Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 18,
               "Title": "Cliente.cs",
               "DocumentMoniker": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Data\\Entities\\Cliente.cs",
               "RelativeDocumentMoniker": "Tools.Data\\Entities\\Cliente.cs",
@@ -249,47 +372,7 @@
               "RelativeToolTip": "Tools.Data\\Entities\\Cliente.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T01:18:37.864Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "IClienteService.cs",
-              "DocumentMoniker": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Service\\Interfaces\\IClienteService.cs",
-              "RelativeDocumentMoniker": "Tools.Service\\Interfaces\\IClienteService.cs",
-              "ToolTip": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Service\\Interfaces\\IClienteService.cs",
-              "RelativeToolTip": "Tools.Service\\Interfaces\\IClienteService.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAArwBAAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T23:58:17.589Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ClienteEndPoints.cs",
-              "DocumentMoniker": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Api\\EndPoint\\EndPoints\\ClienteEndPoints.cs",
-              "RelativeDocumentMoniker": "Tools.Api\\EndPoint\\EndPoints\\ClienteEndPoints.cs",
-              "ToolTip": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Api\\EndPoint\\EndPoints\\ClienteEndPoints.cs",
-              "RelativeToolTip": "Tools.Api\\EndPoint\\EndPoints\\ClienteEndPoints.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAD4v3MAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T23:46:47.281Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "EntitiesEndPoints.cs",
-              "DocumentMoniker": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Api\\EndPoint\\EntitiesEndPoints.cs",
-              "RelativeDocumentMoniker": "Tools.Api\\EndPoint\\EntitiesEndPoints.cs",
-              "ToolTip": "E:\\Proyectos\\mauro-ventas\\Tools.Api\\Tools.Api\\EndPoint\\EntitiesEndPoints.cs",
-              "RelativeToolTip": "Tools.Api\\EndPoint\\EntitiesEndPoints.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAqwHgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T23:25:58.337Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-06T01:18:37.864Z"
             }
           ]
         }

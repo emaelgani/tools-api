@@ -25,14 +25,13 @@ namespace Tools.Service
             /* Automapper Mappings */
             service.AddSingleton(ProfilesConfiguration.MapProfiles());
 
-            service.AddScoped<IClienteRepository, ClienteRepository>();
+            service.AddScoped<IProveedorRepository, ProveedorRepository>();
 
-            // Registrar el CachedClienteRepository manualmente
-            service.AddScoped<IClienteRepository>(serviceProvider =>
-                new CachedClienteRepository(
-                    serviceProvider.GetRequiredService<ClienteRepository>(),
-                    serviceProvider.GetRequiredService<IMemoryCache>()
-                ));
+            service.AddScoped<IProveedorRepository>(serviceProvider =>
+               new CachedProveedorRepository(
+                   serviceProvider.GetRequiredService<ProveedorRepository>(),
+                   serviceProvider.GetRequiredService<IMemoryCache>()
+               ));
 
             // Add services.
             service.AddScoped<IClienteService, ClienteService>();

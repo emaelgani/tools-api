@@ -17,13 +17,14 @@ namespace Tools.Data
                 ServerVersion.Parse("1.0.0.1")));
 
             // Registrar el ClienteRepository primero
-            service.AddScoped<ClienteRepository>();
+            service.AddScoped<ProveedorRepository>();
 
 
             // Agregar otros repositorios
             service.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             service.AddScoped<IUserRepository, UserRepository>();
-            service.AddScoped<IProveedorRepository, ProveedorRepository>();
+            //service.AddScoped<IProveedorRepository, ProveedorRepository>();
+            service.AddScoped<IClienteRepository, ClienteRepository>();
             service.AddScoped<IProductoRepository, ProductoRepository>();
             service.AddScoped<IPedidoRepository, PedidoRepository>();
             service.AddScoped<IPagoRepository, PagoRepository>();

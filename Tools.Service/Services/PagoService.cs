@@ -36,7 +36,7 @@ namespace Tools.Service.Services
 
                 var pago = _mapper.Map<Pago>(pagoDto);
                 _pagoRepo.Add(pago);
-
+                _clienteRepo.Update(dbCliente);
                 await _pagoRepo.CommitAsync();
                 await _clienteRepo.CommitAsync();
 

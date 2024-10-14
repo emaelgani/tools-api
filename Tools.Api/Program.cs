@@ -17,12 +17,14 @@ builder.Services.AddHttpContextAccessor();
 builder.Services.AddCors(options => options.AddPolicy(name: "BackEndDanferOrigins",
     policy =>
     {
-        policy.WithOrigins("http://localhost:4200")
-        .AllowAnyMethod()
-        .AllowAnyHeader();
-        policy.WithOrigins("http://localhost:83")
-        .AllowAnyMethod()
-        .AllowAnyHeader();
+        //policy.WithOrigins("http://localhost:4200")
+        //.AllowAnyMethod()
+        //.AllowAnyHeader();
+        //policy.WithOrigins("http://localhost:83")
+        //.AllowAnyMethod()
+        //.AllowAnyHeader();
+        policy.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
+
     }));
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
