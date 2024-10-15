@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Net;
+using Tools.Data.Entities;
 using Tools.Service.Interfaces;
 using Tools.Shared.DTOs.Proveedor;
 using Tools.Shared.Exceptions;
@@ -116,6 +117,36 @@ namespace Tools.Api.EndPoint.EndPoints
                 context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
                 await context.Response.WriteAsync($"An error occurred: {ex.Message}");
                 return null;
+            }
+        }
+
+        public static async Task<ProveedorDTO?> GetById(HttpContext context, IProveedorService proveedorSrv, int id)
+        {
+            try
+            {
+                // Llamar al servicio con el id extraído
+                return await proveedorSrv.GetById(id);
+              
+            }
+            catch (Exception ex)
+            {
+                context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
+                await context.Response.WriteAsync($"An error occurred: {ex.Message}");
+                return new ProveedorDTO();
+            }
+        }
+
+        public static async Task<IList<ProveedorDTO>> GetAsync(HttpContext context, IProveedorService proveedorSrv)
+        {
+            try
+            {
+                return await proveedorSrv.GetAsync();
+            }
+            catch (Exception ex)
+            {
+                context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
+                await context.Response.WriteAsync($"An error occurred: {ex.Message}");
+                return new List<ProveedorDTO>();
             }
         }
     }

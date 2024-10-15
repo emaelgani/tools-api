@@ -51,15 +51,10 @@ namespace Tools.Data.Repositories
             return _decorated.FindByIdAsync(pkeys);
         }
 
-        public Task<List<Proveedor>> GetAllAsync()
-        {
-            return _decorated.GetAllAsync();
-        }
-
-        public Task<IList<Proveedor>?> GetAllProveedorWithProductsAsync()
+        public Task<List<Proveedor>?> GetAllAsync()
         {
 
-            string key = "getAllProveedorWithProducts";
+            string key = "getAllProveedorWithOutProducts";
 
             return _memoryCache.GetOrCreateAsync(
                 key,
@@ -67,10 +62,27 @@ namespace Tools.Data.Repositories
                 {
                     entry.SetAbsoluteExpiration(TimeSpan.FromMinutes(2)); //Expira en 2 minutos
 
-                    return _decorated.GetAllProveedorWithProductsAsync();
+                    return _decorated.GetAllAsync();
 
                 }
             );
+        }
+
+        public Task<IList<Proveedor>?> GetAllProveedorWithProductsAsync()
+        {
+
+            //string key = "getAllProveedorWithProducts";
+
+            //return _memoryCache.GetOrCreateAsync(
+            //    key,
+            //    entry =>
+            //    {
+            //        entry.SetAbsoluteExpiration(TimeSpan.FromMinutes(2)); //Expira en 2 minutos
+
+                    return _decorated.GetAllProveedorWithProductsAsync();
+
+            //    }
+            //);
         }
 
         public Task<Proveedor?> GetProveedorWithProductsAsync(int id)

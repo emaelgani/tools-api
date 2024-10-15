@@ -805,6 +805,30 @@
   },
   {
     "ContainingType": "Tools.Api.EndPoint.EndPoints.ProveedorEndPoints",
+    "Method": "GetById",
+    "RelativePath": "api/Proveedor/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Tools.Shared.DTOs.Proveedor.ProveedorDTO",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tools.Api.EndPoint.EndPoints.ProveedorEndPoints",
     "Method": "CreateListaPreciosPdf",
     "RelativePath": "api/Proveedor/DownloadPrecioLista",
     "HttpMethod": "GET",
@@ -821,6 +845,24 @@
       {
         "Type": "System.Void",
         "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tools.Api.EndPoint.EndPoints.ProveedorEndPoints",
+    "Method": "GetAsync",
+    "RelativePath": "api/ProveedoresWithOutProducts",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IList\u00601[[Tools.Shared.DTOs.Proveedor.ProveedorDTO, Tools.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
         "StatusCode": 200
       }
     ]

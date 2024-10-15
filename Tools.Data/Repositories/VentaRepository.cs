@@ -37,8 +37,9 @@ namespace Tools.Data.Repositories
         {
             try
             {
-                DateTime fechaInicioParam = DateTime.Parse(fechaInicio);
-                DateTime fechaFinParam = DateTime.Parse(fechaFin).AddDays(1); // Aseguramos que la fechaFin incluya el último día
+                DateTime fechaInicioParam = DateTime.ParseExact(fechaInicio, "dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture);
+
+                DateTime fechaFinParam = DateTime.ParseExact(fechaFin,  "dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture).AddDays(1); // Aseguramos que la fechaFin incluya el último día
 
                 decimal totalCobranzas = await _context.Pago
                     .Where(p => p.Fecha >= fechaInicioParam && p.Fecha < fechaFinParam)

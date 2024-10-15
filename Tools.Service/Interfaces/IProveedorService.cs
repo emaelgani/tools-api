@@ -10,5 +10,7 @@ namespace Tools.Service.Interfaces
         Task Add(ProveedorDTO newProveedor);
         Task AumentarPorcentajeProveedor(ProveedorAumentoDTO proveedorAumento);
         Task<IActionResult> CreatePdfListaPrecios(int idProveedor);
+        Task<ProveedorDTO?> GetById(int id);
+        Task<IList<ProveedorDTO>> GetAsync();
     }
 }

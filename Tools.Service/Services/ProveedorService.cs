@@ -158,6 +158,18 @@ namespace Tools.Service.Services
             }
         }
 
+        public async Task<IList<ProveedorDTO>> GetAsync()
+        {
+            try
+            {
+                return _mapper.Map<IList<ProveedorDTO>>(await _proveedorRepo.GetAllAsync());
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("An error occurred getting prevedores", ex);
+            }
+        }
+
         public async Task<IList<ProveedorWithProductsDTO>> GetAllAsync()
         {
             try
@@ -195,6 +207,20 @@ namespace Tools.Service.Services
             catch (Exception ex)
             {
                 throw new Exception("An error occurred while updating a proveedor.", ex);
+            }
+        }
+
+        public async Task<ProveedorDTO?> GetById(int id)
+        {
+            try
+            {
+                var proveedor = _proveedorRepo.FindByCondition(p => p.IdProveedor == id).FirstOrDefault();
+
+                return _mapper.Map<ProveedorDTO>(proveedor);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("An error occurred getting prevedores", ex);
             }
         }
     }

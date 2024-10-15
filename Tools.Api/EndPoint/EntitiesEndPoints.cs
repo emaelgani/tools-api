@@ -32,6 +32,8 @@ namespace Tools.Api.EndPoint
 
             #region Proveedor
             //GET
+            app.MapGet("/api/Proveedor/{id}", ProveedorEndPoints.GetById);
+            app.MapGet("/api/ProveedoresWithOutProducts", ProveedorEndPoints.GetAsync);
             app.MapGet("/api/Proveedor", ProveedorEndPoints.GetAllProveedoresAsync);
             app.MapGet("/api/Proveedor/DownloadPrecioLista", ProveedorEndPoints.CreateListaPreciosPdf);
             //POST
